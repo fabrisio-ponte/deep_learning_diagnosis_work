@@ -141,6 +141,83 @@ def compute_top_k_metrics(y_true, y_prob, top_k_values=(5, 10)):
     return metrics
 
 
+def compute_recurring_mask(df, label_vocab):
+    """Boolean mask of shape (num_rows, num_labels): True where a label's code has
+    already appeared in the patient's own visit history (the `code` column, i.e.
+    the model's input sequence), meaning it would count as a RECURRING diagnosis
+    if predicted/true. False marks a NEW diagnosis (first occurrence for that
+    patient). Computed independently of the true label, so it can mask both true
+    positives and false positives/negatives.
+    """
+    non_code_tokens = {"PAD", "SEP", "CLS", "MASK"}
+    num_rows = len(df)
+    num_labels = len(label_vocab)
+    recurring_mask = np.zeros((num_rows, num_labels), dtype=bool)
+
+    for row_idx, history_codes in enumerate(df["code"]):
+        history_set = set(normalize_label_row(history_codes)) - non_code_tokens
+        for code in history_set:
+            label_idx = label_vocab.get(code)
+            if label_idx is not None:
+                recurring_mask[row_idx, label_idx] = True
+
+    return recurring_mask
+
+
+def compute_new_recurring_metrics(y_true, y_prob, threshold, recurring_mask, top_k_values=(5, 10)):
+    """Split evaluation into RECURRING (code already seen in patient history) vs
+    NEW (first occurrence for that patient) diagnosis predictions. Reports
+    micro precision/recall/F1/AUC/APS plus top-k recall computed independently
+    on each subset.
+    """
+    y_pred = (y_prob >= float(threshold)).astype(np.int64)
+    y_true_bool = y_true.astype(bool)
+    y_pred_bool = y_pred.astype(bool)
+
+    results = {}
+    for name, mask in (("recurring", recurring_mask), ("new", ~recurring_mask)):
+        sel_true = y_true_bool[mask]
+        sel_pred = y_pred_bool[mask]
+        sel_prob = y_prob[mask]
+
+        tp = int(np.sum(sel_true & sel_pred))
+        fp = int(np.sum(~sel_true & sel_pred))
+        fn = int(np.sum(sel_true & ~sel_pred))
+
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+        f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
+        support = int(sel_true.sum())
+
+        if 0 < support < len(sel_true):
+            try:
+                auc = float(roc_auc_score(sel_true, sel_prob))
+            except ValueError:
+                auc = float("nan")
+            aps = float(average_precision_score(sel_true, sel_prob))
+        else:
+            auc = float("nan")
+            aps = float("nan")
+
+        results[name] = {
+            "support_positive_positions": support,
+            "support_total_positions": int(mask.sum()),
+            "precision": float(precision),
+            "recall": float(recall),
+            "f1": float(f1),
+            "auc": auc,
+            "aps": aps,
+        }
+
+    # Row-level top-k recall, restricted to recurring-only or new-only ground truth
+    # (predictions are still ranked over the full label space for each row).
+    for name, mask in (("recurring", recurring_mask), ("new", ~recurring_mask)):
+        masked_true = np.where(mask, y_true, 0)
+        results[name]["top_k_metrics"] = compute_top_k_metrics(masked_true, y_prob, top_k_values=top_k_values)
+
+    return results
+
+
 def compute_per_class_metrics(y_true, y_prob, y_pred, label_vocab, train_supports, excluded_label_indices=None):
     idx_to_label = {idx: label for label, idx in label_vocab.items()}
     per_class = []
@@ -796,6 +873,28 @@ def main():
     per_class_metrics_path = run_dir / "per_class_metrics.csv"
     pd.DataFrame(test_metrics["per_class_metrics"]).to_csv(per_class_metrics_path, index=False)
 
+    # NEW vs RECURRING diagnosis breakdown on the test set: does the model mostly
+    # re-predict codes the patient already has, or does it also catch genuinely
+    # new diagnoses for the next visit?
+    test_y_true, test_y_prob = collect_eval_arrays(model, test_loader, mlb, global_params["device"])
+    recurring_mask_full = compute_recurring_mask(test_df, label_vocab)
+
+    metric_true_nr = test_y_true
+    metric_prob_nr = test_y_prob
+    metric_mask_nr = recurring_mask_full
+    if metric_exclude_labels:
+        excluded_indices_nr = {
+            int(label_vocab[label]) for label in metric_exclude_labels if label in label_vocab
+        }
+        keep_indices_nr = [idx for idx in range(test_y_true.shape[1]) if idx not in excluded_indices_nr]
+        metric_true_nr = test_y_true[:, keep_indices_nr]
+        metric_prob_nr = test_y_prob[:, keep_indices_nr]
+        metric_mask_nr = recurring_mask_full[:, keep_indices_nr]
+
+    new_vs_recurring_metrics = compute_new_recurring_metrics(
+        metric_true_nr, metric_prob_nr, tuned_threshold, metric_mask_nr
+    )
+
     label_support_summary = {
         "train_label_count": len(train_label_supports),
         "support_tiers": summarize_support_tiers(train_label_supports),
@@ -846,6 +945,7 @@ def main():
         "val_metrics_tuned_threshold": val_metrics_tuned_threshold,
         "metrics_threshold_0_5": test_metrics_threshold_0_5,
         "metrics": test_metrics,
+        "new_vs_recurring_metrics": new_vs_recurring_metrics,
         "artifacts": {"best_model": str(best_model_path.relative_to(project_root))},
     }
 
@@ -894,6 +994,8 @@ def main():
             prefix="val_tuned.",
         )
         mlflow.log_metrics(val_tuned_scalar_metrics)
+        new_recurring_scalar_metrics = flatten_scalar_metrics(new_vs_recurring_metrics, prefix="test_new_recurring.")
+        mlflow.log_metrics(new_recurring_scalar_metrics)
         if threshold_tuning_enabled:
             mlflow.log_metric("threshold.selected", float(tuned_threshold))
             if np.isfinite(tuned_score):
@@ -911,6 +1013,17 @@ def main():
     print(f"Test micro F1: {test_metrics['micro_f1']:.4f}")
     print(f"Test top-10 recall: {test_metrics['top_k_metrics']['top_10_recall']:.4f}")
     print(f"Threshold used for final test metrics: {tuned_threshold:.3f}")
+    recurring_m = new_vs_recurring_metrics["recurring"]
+    new_m = new_vs_recurring_metrics["new"]
+    print(
+        "Test RECURRING vs NEW diagnoses - "
+        f"recurring (n={recurring_m['support_positive_positions']}): "
+        f"P={recurring_m['precision']:.4f} R={recurring_m['recall']:.4f} "
+        f"F1={recurring_m['f1']:.4f} AUC={recurring_m['auc']:.4f} | "
+        f"new (n={new_m['support_positive_positions']}): "
+        f"P={new_m['precision']:.4f} R={new_m['recall']:.4f} "
+        f"F1={new_m['f1']:.4f} AUC={new_m['auc']:.4f}"
+    )
     print(f"Metrics file: {metrics_path}")
     print(f"Per-class metrics CSV: {per_class_metrics_path}")
 

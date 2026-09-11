@@ -1,0 +1,316 @@
+{
+  "step": 7,
+  "title": "Cleaning Impact Analysis",
+  "splits": {
+    "train": {
+      "samples": 143677,
+      "has_label_original": true,
+      "rows_with_any_code_removed": 118913,
+      "pct_rows_with_any_code_removed": 82.76411673406321,
+      "rows_with_any_code_added": 0,
+      "pct_rows_with_any_code_added": 0.0,
+      "avg_codes_removed_per_row": 0.8276411673406321,
+      "total_label_instances_before": 1479201,
+      "total_label_instances_after": 1360288,
+      "pct_label_instances_removed": 8.039002136964484,
+      "top_10_codes_removed": [
+        {
+          "label": "CCSR_XXX000",
+          "times_removed": 118913
+        }
+      ],
+      "removed_codes_matching_known_strategy": [
+        {
+          "label": "CCSR_XXX000",
+          "times_removed": 118913
+        }
+      ],
+      "removed_codes_not_matching_known_strategy": [],
+      "unexpected_added_codes": [],
+      "imbalance_before_cleaning": {
+        "unique_labels": 464,
+        "max_count": 118913,
+        "min_count": 1,
+        "imbalance_ratio": 118913.0,
+        "top_5": [
+          {
+            "label": "CCSR_XXX000",
+            "count": 118913,
+            "fraction_of_samples": 0.8276411673406321
+          },
+          {
+            "label": "CCSR_END010",
+            "count": 52559,
+            "fraction_of_samples": 0.36581359577385386
+          },
+          {
+            "label": "CCSR_CIR007",
+            "count": 50748,
+            "fraction_of_samples": 0.35320893392818614
+          },
+          {
+            "label": "CCSR_FAC025",
+            "count": 40269,
+            "fraction_of_samples": 0.2802745046179973
+          },
+          {
+            "label": "CCSR_DIG004",
+            "count": 37866,
+            "fraction_of_samples": 0.263549489479875
+          }
+        ]
+      },
+      "imbalance_after_cleaning": {
+        "unique_labels": 463,
+        "max_count": 52559,
+        "min_count": 1,
+        "imbalance_ratio": 52559.0,
+        "top_5": [
+          {
+            "label": "CCSR_END010",
+            "count": 52559,
+            "fraction_of_samples": 0.36581359577385386
+          },
+          {
+            "label": "CCSR_CIR007",
+            "count": 50748,
+            "fraction_of_samples": 0.35320893392818614
+          },
+          {
+            "label": "CCSR_FAC025",
+            "count": 40269,
+            "fraction_of_samples": 0.2802745046179973
+          },
+          {
+            "label": "CCSR_DIG004",
+            "count": 37866,
+            "fraction_of_samples": 0.263549489479875
+          },
+          {
+            "label": "CCSR_CIR011",
+            "count": 33828,
+            "fraction_of_samples": 0.23544478239384176
+          }
+        ]
+      }
+    },
+    "val": {
+      "samples": 17799,
+      "has_label_original": true,
+      "rows_with_any_code_removed": 14684,
+      "pct_rows_with_any_code_removed": 82.49901679869656,
+      "rows_with_any_code_added": 0,
+      "pct_rows_with_any_code_added": 0.0,
+      "avg_codes_removed_per_row": 0.8251025338502163,
+      "total_label_instances_before": 181965,
+      "total_label_instances_after": 167279,
+      "pct_label_instances_removed": 8.070782842854394,
+      "top_10_codes_removed": [
+        {
+          "label": "CCSR_XXX000",
+          "times_removed": 14684
+        },
+        {
+          "label": "CCSR_INJ044",
+          "times_removed": 1
+        },
+        {
+          "label": "CCSR_PNL014",
+          "times_removed": 1
+        }
+      ],
+      "removed_codes_matching_known_strategy": [
+        {
+          "label": "CCSR_XXX000",
+          "times_removed": 14684
+        }
+      ],
+      "removed_codes_not_matching_known_strategy": [
+        {
+          "label": "CCSR_INJ044",
+          "times_removed": 1
+        },
+        {
+          "label": "CCSR_PNL014",
+          "times_removed": 1
+        }
+      ],
+      "unexpected_added_codes": [],
+      "imbalance_before_cleaning": {
+        "unique_labels": 427,
+        "max_count": 14684,
+        "min_count": 1,
+        "imbalance_ratio": 14684.0,
+        "top_5": [
+          {
+            "label": "CCSR_XXX000",
+            "count": 14684,
+            "fraction_of_samples": 0.8249901679869656
+          },
+          {
+            "label": "CCSR_END010",
+            "count": 6552,
+            "fraction_of_samples": 0.36811056800943875
+          },
+          {
+            "label": "CCSR_CIR007",
+            "count": 6070,
+            "fraction_of_samples": 0.34103039496600934
+          },
+          {
+            "label": "CCSR_FAC025",
+            "count": 5082,
+            "fraction_of_samples": 0.2855216585201416
+          },
+          {
+            "label": "CCSR_DIG004",
+            "count": 4485,
+            "fraction_of_samples": 0.2519804483397944
+          }
+        ]
+      },
+      "imbalance_after_cleaning": {
+        "unique_labels": 424,
+        "max_count": 6552,
+        "min_count": 1,
+        "imbalance_ratio": 6552.0,
+        "top_5": [
+          {
+            "label": "CCSR_END010",
+            "count": 6552,
+            "fraction_of_samples": 0.36811056800943875
+          },
+          {
+            "label": "CCSR_CIR007",
+            "count": 6070,
+            "fraction_of_samples": 0.34103039496600934
+          },
+          {
+            "label": "CCSR_FAC025",
+            "count": 5082,
+            "fraction_of_samples": 0.2855216585201416
+          },
+          {
+            "label": "CCSR_DIG004",
+            "count": 4485,
+            "fraction_of_samples": 0.2519804483397944
+          },
+          {
+            "label": "CCSR_GEN003",
+            "count": 4288,
+            "fraction_of_samples": 0.24091241080959605
+          }
+        ]
+      }
+    },
+    "test": {
+      "samples": 18237,
+      "has_label_original": true,
+      "rows_with_any_code_removed": 14859,
+      "pct_rows_with_any_code_removed": 81.47721664747492,
+      "rows_with_any_code_added": 0,
+      "pct_rows_with_any_code_added": 0.0,
+      "avg_codes_removed_per_row": 0.8148818336349181,
+      "total_label_instances_before": 183873,
+      "total_label_instances_after": 169012,
+      "pct_label_instances_removed": 8.082208915936544,
+      "top_10_codes_removed": [
+        {
+          "label": "CCSR_XXX000",
+          "times_removed": 14859
+        },
+        {
+          "label": "CCSR_INJ057",
+          "times_removed": 1
+        },
+        {
+          "label": "CCSR_INJ055",
+          "times_removed": 1
+        }
+      ],
+      "removed_codes_matching_known_strategy": [
+        {
+          "label": "CCSR_XXX000",
+          "times_removed": 14859
+        }
+      ],
+      "removed_codes_not_matching_known_strategy": [
+        {
+          "label": "CCSR_INJ057",
+          "times_removed": 1
+        },
+        {
+          "label": "CCSR_INJ055",
+          "times_removed": 1
+        }
+      ],
+      "unexpected_added_codes": [],
+      "imbalance_before_cleaning": {
+        "unique_labels": 433,
+        "max_count": 14859,
+        "min_count": 1,
+        "imbalance_ratio": 14859.0,
+        "top_5": [
+          {
+            "label": "CCSR_XXX000",
+            "count": 14859,
+            "fraction_of_samples": 0.8147721664747491
+          },
+          {
+            "label": "CCSR_END010",
+            "count": 6218,
+            "fraction_of_samples": 0.34095520096507104
+          },
+          {
+            "label": "CCSR_CIR007",
+            "count": 6198,
+            "fraction_of_samples": 0.3398585293633821
+          },
+          {
+            "label": "CCSR_FAC025",
+            "count": 5100,
+            "fraction_of_samples": 0.27965125843066296
+          },
+          {
+            "label": "CCSR_DIG004",
+            "count": 4529,
+            "fraction_of_samples": 0.24834128420244558
+          }
+        ]
+      },
+      "imbalance_after_cleaning": {
+        "unique_labels": 430,
+        "max_count": 6218,
+        "min_count": 1,
+        "imbalance_ratio": 6218.0,
+        "top_5": [
+          {
+            "label": "CCSR_END010",
+            "count": 6218,
+            "fraction_of_samples": 0.34095520096507104
+          },
+          {
+            "label": "CCSR_CIR007",
+            "count": 6198,
+            "fraction_of_samples": 0.3398585293633821
+          },
+          {
+            "label": "CCSR_FAC025",
+            "count": 5100,
+            "fraction_of_samples": 0.27965125843066296
+          },
+          {
+            "label": "CCSR_DIG004",
+            "count": 4529,
+            "fraction_of_samples": 0.24834128420244558
+          },
+          {
+            "label": "CCSR_CIR011",
+            "count": 4142,
+            "fraction_of_samples": 0.22712068870976587
+          }
+        ]
+      }
+    }
+  }
+}
