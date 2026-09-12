@@ -1,0 +1,4723 @@
+{
+  "run_dir": "data/models/clean_runs/clean_run_20260910_124255",
+  "threshold": 0.6000000000000002,
+  "min_fp_count": 10,
+  "min_cooccur_count": 3,
+  "top_n_confusions": 5,
+  "num_labels_analyzed": 102,
+  "same_category_fraction_of_top_pairs": 0.1784313725490196,
+  "category_confusion_pair_counts": {
+    "BLD->END": 1,
+    "BLD->NEO": 14,
+    "BLD->NVS": 3,
+    "BLD->FAC": 2,
+    "BLD->MUS": 1,
+    "BLD->INJ": 2,
+    "BLD->CIR": 1,
+    "BLD->GEN": 1,
+    "CIR->CIR": 20,
+    "CIR->MUS": 20,
+    "CIR->SKN": 5,
+    "CIR->NEO": 12,
+    "CIR->INJ": 6,
+    "CIR->MAL": 1,
+    "CIR->GEN": 1,
+    "CIR->END": 2,
+    "CIR->DIG": 2,
+    "CIR->MBD": 5,
+    "CIR->BLD": 1,
+    "DIG->NVS": 4,
+    "DIG->NEO": 25,
+    "DIG->MAL": 1,
+    "DIG->END": 2,
+    "DIG->FAC": 1,
+    "DIG->DIG": 3,
+    "DIG->CIR": 3,
+    "DIG->MUS": 1,
+    "DIG->PRG": 1,
+    "DIG->INF": 3,
+    "DIG->RSP": 1,
+    "DIG->MBD": 10,
+    "END->NEO": 11,
+    "END->NVS": 6,
+    "END->BLD": 1,
+    "END->MUS": 2,
+    "END->CIR": 7,
+    "END->SKN": 1,
+    "END->INJ": 6,
+    "END->END": 1,
+    "END->INF": 1,
+    "END->DIG": 1,
+    "END->GEN": 2,
+    "END->MAL": 1,
+    "EYE->INJ": 2,
+    "EYE->NVS": 1,
+    "EYE->NEO": 2,
+    "FAC->NEO": 8,
+    "FAC->NVS": 1,
+    "FAC->PRG": 1,
+    "FAC->CIR": 2,
+    "FAC->MUS": 1,
+    "FAC->END": 1,
+    "FAC->INJ": 1,
+    "GEN->NEO": 15,
+    "GEN->MUS": 3,
+    "GEN->CIR": 5,
+    "GEN->INJ": 3,
+    "GEN->SKN": 1,
+    "GEN->NVS": 3,
+    "INF->NEO": 5,
+    "INF->MBD": 9,
+    "INF->INF": 1,
+    "INJ->NEO": 13,
+    "INJ->INJ": 1,
+    "INJ->CIR": 2,
+    "INJ->MUS": 2,
+    "INJ->MAL": 1,
+    "INJ->FAC": 1,
+    "MBD->MBD": 30,
+    "MBD->PRG": 20,
+    "MBD->INF": 7,
+    "MBD->NVS": 1,
+    "MBD->INJ": 1,
+    "MBD->MAL": 1,
+    "MUS->NEO": 7,
+    "MUS->NVS": 2,
+    "MUS->INJ": 1,
+    "MUS->BLD": 1,
+    "MUS->CIR": 2,
+    "MUS->MUS": 2,
+    "NEO->CIR": 1,
+    "NEO->NEO": 17,
+    "NEO->NVS": 7,
+    "NEO->GEN": 2,
+    "NEO->PRG": 2,
+    "NEO->SKN": 1,
+    "NVS->NVS": 6,
+    "NVS->MBD": 3,
+    "NVS->FAC": 1,
+    "NVS->END": 1,
+    "NVS->NEO": 9,
+    "NVS->MUS": 4,
+    "NVS->PRG": 10,
+    "NVS->CIR": 4,
+    "NVS->GEN": 1,
+    "NVS->SKN": 2,
+    "NVS->BLD": 1,
+    "NVS->EYE": 1,
+    "NVS->INJ": 1,
+    "NVS->INF": 1,
+    "PRG->PRG": 10,
+    "RSP->NEO": 13,
+    "RSP->MUS": 2,
+    "RSP->SKN": 1,
+    "RSP->CIR": 2,
+    "RSP->PRG": 5,
+    "RSP->NVS": 1,
+    "RSP->INJ": 1,
+    "SKN->NEO": 8,
+    "SKN->NVS": 1,
+    "SKN->BLD": 1,
+    "SKN->FAC": 1,
+    "SKN->END": 1,
+    "SKN->CIR": 2,
+    "SKN->MUS": 1,
+    "SYM->NEO": 16,
+    "SYM->PRG": 6,
+    "SYM->NVS": 4,
+    "SYM->MBD": 2,
+    "SYM->INJ": 2
+  },
+  "label_confusions": {
+    "CCSR_BLD003": {
+      "label": "CCSR_BLD003",
+      "category": "BLD",
+      "fp_count": 30,
+      "train_support": 17834,
+      "num_candidate_confusions": 45,
+      "same_category_confusions": 1,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.1,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 70.1423076923077
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.23333333333333334,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 42.13168316831683
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.1,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 31.443103448275863
+        },
+        {
+          "confused_with_label": "CCSR_FAC009",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.13333333333333333,
+          "baseline_rate": 0.0055930251686132585,
+          "lift": 23.83921568627451
+        },
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.1,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 18.05643564356436
+        }
+      ]
+    },
+    "CCSR_BLD004": {
+      "label": "CCSR_BLD004",
+      "category": "BLD",
+      "fp_count": 1566,
+      "train_support": 6462,
+      "num_candidate_confusions": 260,
+      "same_category_confusions": 9,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.004469987228607918,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 7.4108324625566
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0019157088122605363,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.98735632183908
+        },
+        {
+          "confused_with_label": "CCSR_INJ009",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0019157088122605363,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 4.990968801313628
+        },
+        {
+          "confused_with_label": "CCSR_INJ074",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0019157088122605363,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 4.990968801313628
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 12,
+          "cooccur_rate_given_fp": 0.007662835249042145,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 4.367097701149425
+        }
+      ]
+    },
+    "CCSR_BLD006": {
+      "label": "CCSR_BLD006",
+      "category": "BLD",
+      "fp_count": 49,
+      "train_support": 13108,
+      "num_candidate_confusions": 71,
+      "same_category_confusions": 5,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 16,
+          "cooccur_rate_given_fp": 0.32653061224489793,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 102.67135819845178
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.08163265306122448,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 53.16909620991253
+        },
+        {
+          "confused_with_label": "CCSR_FAC009",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.12244897959183673,
+          "baseline_rate": 0.0055930251686132585,
+          "lift": 21.893157262905163
+        },
+        {
+          "confused_with_label": "CCSR_NVS008",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.30612244897959184,
+          "baseline_rate": 0.01447606514229314,
+          "lift": 21.146799628942485
+        },
+        {
+          "confused_with_label": "CCSR_GEN007",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.22448979591836735,
+          "baseline_rate": 0.01518890168339091,
+          "lift": 14.779857069181462
+        }
+      ]
+    },
+    "CCSR_BLD007": {
+      "label": "CCSR_BLD007",
+      "category": "BLD",
+      "fp_count": 2454,
+      "train_support": 8040,
+      "num_candidate_confusions": 316,
+      "same_category_confusions": 9,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0012224938875305623,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.431540342298288
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0012224938875305623,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.431540342298288
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.002037489812550937,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 7.4315403422982875
+        },
+        {
+          "confused_with_label": "CCSR_NEO032",
+          "cooccur_count": 25,
+          "cooccur_rate_given_fp": 0.010187449062754686,
+          "baseline_rate": 0.0014805066622799803,
+          "lift": 6.881055872498415
+        },
+        {
+          "confused_with_label": "CCSR_NEO020",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0028524857375713123,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 6.502597799511003
+        }
+      ]
+    },
+    "CCSR_BLD008": {
+      "label": "CCSR_BLD008",
+      "category": "BLD",
+      "fp_count": 1132,
+      "train_support": 2888,
+      "num_candidate_confusions": 260,
+      "same_category_confusions": 9,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 25,
+          "cooccur_rate_given_fp": 0.022084805653710248,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 14.384307168096921
+        },
+        {
+          "confused_with_label": "CCSR_NEO004",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0035335689045936395,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 12.88833922261484
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 121,
+          "cooccur_rate_given_fp": 0.1068904593639576,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 12.107834207580712
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 53,
+          "cooccur_rate_given_fp": 0.046819787985865724,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 10.673155918727915
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 105,
+          "cooccur_rate_given_fp": 0.09275618374558305,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 9.397747349823321
+        }
+      ]
+    },
+    "CCSR_CIR001": {
+      "label": "CCSR_CIR001",
+      "category": "CIR",
+      "fp_count": 153,
+      "train_support": 3196,
+      "num_candidate_confusions": 112,
+      "same_category_confusions": 22,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR035",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0196078431372549,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 11.174632352941178
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0196078431372549,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 10.836007130124777
+        },
+        {
+          "confused_with_label": "CCSR_CIR036",
+          "cooccur_count": 17,
+          "cooccur_rate_given_fp": 0.1111111111111111,
+          "baseline_rate": 0.017766079947359764,
+          "lift": 6.254115226337448
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 36,
+          "cooccur_rate_given_fp": 0.23529411764705882,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 6.052269144611301
+        },
+        {
+          "confused_with_label": "CCSR_CIR028",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.026143790849673203,
+          "baseline_rate": 0.004551187147008828,
+          "lift": 5.744389321993858
+        }
+      ]
+    },
+    "CCSR_CIR003": {
+      "label": "CCSR_CIR003",
+      "category": "CIR",
+      "fp_count": 4522,
+      "train_support": 6890,
+      "num_candidate_confusions": 297,
+      "same_category_confusions": 36,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0006634232640424591,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.032950022114109
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0011057054400707652,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 4.032950022114109
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 24,
+          "cooccur_rate_given_fp": 0.005307386112339673,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 2.9330545615375336
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0017691287041132243,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 2.9330545615375336
+        },
+        {
+          "confused_with_label": "CCSR_INJ040",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.0019902697921273774,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 2.7920423230020757
+        }
+      ]
+    },
+    "CCSR_CIR005": {
+      "label": "CCSR_CIR005",
+      "category": "CIR",
+      "fp_count": 4103,
+      "train_support": 5131,
+      "num_candidate_confusions": 288,
+      "same_category_confusions": 36,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.00073117231294175,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.444796490372898
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 24,
+          "cooccur_rate_given_fp": 0.005849378503534,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.232579265725744
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 486,
+          "cooccur_rate_given_fp": 0.11844991469656349,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 3.04678574657437
+        },
+        {
+          "confused_with_label": "CCSR_CIR026",
+          "cooccur_count": 828,
+          "cooccur_rate_given_fp": 0.201803558371923,
+          "baseline_rate": 0.07122882052969239,
+          "lift": 2.8331728206533944
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0017060687301974165,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 2.8285068575100256
+        }
+      ]
+    },
+    "CCSR_CIR007": {
+      "label": "CCSR_CIR007",
+      "category": "CIR",
+      "fp_count": 310,
+      "train_support": 50748,
+      "num_candidate_confusions": 156,
+      "same_category_confusions": 23,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO009",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.00967741935483871,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 25.212442396313367
+        },
+        {
+          "confused_with_label": "CCSR_MAL010",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.012903225806451613,
+          "baseline_rate": 0.0033996819652355103,
+          "lift": 3.7954214360041623
+        },
+        {
+          "confused_with_label": "CCSR_INJ002",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.016129032258064516,
+          "baseline_rate": 0.004606020727093272,
+          "lift": 3.5017281105990783
+        },
+        {
+          "confused_with_label": "CCSR_GEN001",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.016129032258064516,
+          "baseline_rate": 0.004770521467346603,
+          "lift": 3.3809788654060067
+        },
+        {
+          "confused_with_label": "CCSR_MUS013",
+          "cooccur_count": 45,
+          "cooccur_rate_given_fp": 0.14516129032258066,
+          "baseline_rate": 0.04896638701540824,
+          "lift": 2.9645089043817507
+        }
+      ]
+    },
+    "CCSR_CIR009": {
+      "label": "CCSR_CIR009",
+      "category": "CIR",
+      "fp_count": 2109,
+      "train_support": 3490,
+      "num_candidate_confusions": 258,
+      "same_category_confusions": 35,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.008534850640113799,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 4.716668821931981
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 329,
+          "cooccur_rate_given_fp": 0.15599810336652442,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 4.012605657398175
+        },
+        {
+          "confused_with_label": "CCSR_INJ013",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.001422475106685633,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 3.705954074375127
+        },
+        {
+          "confused_with_label": "CCSR_CIR018",
+          "cooccur_count": 28,
+          "cooccur_rate_given_fp": 0.013276434329065908,
+          "baseline_rate": 0.003673849865657729,
+          "lift": 3.6137661620772383
+        },
+        {
+          "confused_with_label": "CCSR_CIR005",
+          "cooccur_count": 255,
+          "cooccur_rate_given_fp": 0.12091038406827881,
+          "baseline_rate": 0.03366781817184844,
+          "lift": 3.5912747137674277
+        }
+      ]
+    },
+    "CCSR_CIR011": {
+      "label": "CCSR_CIR011",
+      "category": "CIR",
+      "fp_count": 3274,
+      "train_support": 33828,
+      "num_candidate_confusions": 293,
+      "same_category_confusions": 35,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.006414172266340868,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 4.499048446971477
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0012217470983506415,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 4.456200366524129
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0021380574221136223,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.54470483700783
+        },
+        {
+          "confused_with_label": "CCSR_INJ040",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.002443494196701283,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 3.4278464357877922
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.005497861942577886,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.038318431720997
+        }
+      ]
+    },
+    "CCSR_CIR012": {
+      "label": "CCSR_CIR012",
+      "category": "CIR",
+      "fp_count": 25,
+      "train_support": 6025,
+      "num_candidate_confusions": 17,
+      "same_category_confusions": 3,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_DIG021",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.16,
+          "baseline_rate": 0.028842463124417392,
+          "lift": 5.547376425855513
+        },
+        {
+          "confused_with_label": "CCSR_DIG020",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.2,
+          "baseline_rate": 0.04161868728409278,
+          "lift": 4.805533596837945
+        },
+        {
+          "confused_with_label": "CCSR_MBD017",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.36,
+          "baseline_rate": 0.10911882436804299,
+          "lift": 3.2991557788944723
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.12,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 3.0866572637517633
+        },
+        {
+          "confused_with_label": "CCSR_MUS011",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.16,
+          "baseline_rate": 0.061523276854745845,
+          "lift": 2.6006417112299465
+        }
+      ]
+    },
+    "CCSR_CIR014": {
+      "label": "CCSR_CIR014",
+      "category": "CIR",
+      "fp_count": 4277,
+      "train_support": 6850,
+      "num_candidate_confusions": 296,
+      "same_category_confusions": 36,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0007014262333411269,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.263970072480711
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.002104278700023381,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.4887027865751272
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0009352349777881693,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 3.4111760579845685
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 23,
+          "cooccur_rate_given_fp": 0.005377601122281974,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 2.971857929304738
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 20,
+          "cooccur_rate_given_fp": 0.004676174888940846,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 2.664981295300444
+        }
+      ]
+    },
+    "CCSR_CIR016": {
+      "label": "CCSR_CIR016",
+      "category": "CIR",
+      "fp_count": 4250,
+      "train_support": 4673,
+      "num_candidate_confusions": 292,
+      "same_category_confusions": 35,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.0021176470588235292,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.5108663101604276
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 26,
+          "cooccur_rate_given_fp": 0.00611764705882353,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.3808342245989307
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 459,
+          "cooccur_rate_given_fp": 0.108,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 2.777991537376587
+        },
+        {
+          "confused_with_label": "CCSR_CIR026",
+          "cooccur_count": 823,
+          "cooccur_rate_given_fp": 0.19364705882352942,
+          "baseline_rate": 0.07122882052969239,
+          "lift": 2.7186615948919983
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 20,
+          "cooccur_rate_given_fp": 0.004705882352941176,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 2.681911764705882
+        }
+      ]
+    },
+    "CCSR_CIR017": {
+      "label": "CCSR_CIR017",
+      "category": "CIR",
+      "fp_count": 3505,
+      "train_support": 28801,
+      "num_candidate_confusions": 300,
+      "same_category_confusions": 36,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0008559201141226819,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 5.203138373751783
+        },
+        {
+          "confused_with_label": "CCSR_INJ072",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0008559201141226819,
+          "baseline_rate": 0.00021933432033777484,
+          "lift": 3.9023537803138377
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 23,
+          "cooccur_rate_given_fp": 0.006562054208273894,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.6264297756451818
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0019971469329529245,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.3110880560238622
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0008559201141226819,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 3.12188302425107
+        }
+      ]
+    },
+    "CCSR_CIR019": {
+      "label": "CCSR_CIR019",
+      "category": "CIR",
+      "fp_count": 2938,
+      "train_support": 30752,
+      "num_candidate_confusions": 283,
+      "same_category_confusions": 36,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010211027910142954,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.207283866575901
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010211027910142954,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 3.7243703199455407
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.006126616746085773,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.385791199950492
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 16,
+          "cooccur_rate_given_fp": 0.005445881552076242,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 3.103641933287951
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0017018379850238256,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 2.8214926666254097
+        }
+      ]
+    },
+    "CCSR_CIR025": {
+      "label": "CCSR_CIR025",
+      "category": "CIR",
+      "fp_count": 2172,
+      "train_support": 3991,
+      "num_candidate_confusions": 284,
+      "same_category_confusions": 36,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0023020257826887663,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 8.396408839779006
+        },
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0013812154696132596,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 8.396408839779005
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0032228360957642726,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 5.343169261677549
+        },
+        {
+          "confused_with_label": "CCSR_INJ045",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0013812154696132596,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 5.037845303867403
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.006906077348066298,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 3.935816643646409
+        }
+      ]
+    },
+    "CCSR_CIR026": {
+      "label": "CCSR_CIR026",
+      "category": "CIR",
+      "fp_count": 3927,
+      "train_support": 9464,
+      "num_candidate_confusions": 283,
+      "same_category_confusions": 35,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0010185892538833714,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 3.7152024446142087
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.002037178507766743,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.377456767831099
+        },
+        {
+          "confused_with_label": "CCSR_CIR005",
+          "cooccur_count": 359,
+          "cooccur_rate_given_fp": 0.0914183855360326,
+          "baseline_rate": 0.03366781817184844,
+          "lift": 2.715304718274636
+        },
+        {
+          "confused_with_label": "CCSR_CIR001",
+          "cooccur_count": 216,
+          "cooccur_rate_given_fp": 0.05500381970970206,
+          "baseline_rate": 0.020343258211328617,
+          "lift": 2.7037861456761094
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 19,
+          "cooccur_rate_given_fp": 0.004838298955946015,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 2.6738199411996204
+        }
+      ]
+    },
+    "CCSR_CIR031": {
+      "label": "CCSR_CIR031",
+      "category": "CIR",
+      "fp_count": 358,
+      "train_support": 8443,
+      "num_candidate_confusions": 193,
+      "same_category_confusions": 31,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO057",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.04189944134078212,
+          "baseline_rate": 0.004167352086417722,
+          "lift": 10.054211996471626
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.05027932960893855,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 9.078654792853587
+        },
+        {
+          "confused_with_label": "CCSR_BLD005",
+          "cooccur_count": 16,
+          "cooccur_rate_given_fp": 0.0446927374301676,
+          "baseline_rate": 0.006689696770302133,
+          "lift": 6.680831577983332
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0111731843575419,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 6.367667597765363
+        },
+        {
+          "confused_with_label": "CCSR_MUS021",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.025139664804469275,
+          "baseline_rate": 0.004167352086417722,
+          "lift": 6.032527197882977
+        }
+      ]
+    },
+    "CCSR_CIR039": {
+      "label": "CCSR_CIR039",
+      "category": "CIR",
+      "fp_count": 2085,
+      "train_support": 4847,
+      "num_candidate_confusions": 254,
+      "same_category_confusions": 32,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.010071942446043165,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 7.064692861095739
+        },
+        {
+          "confused_with_label": "CCSR_MBD023",
+          "cooccur_count": 65,
+          "cooccur_rate_given_fp": 0.03117505995203837,
+          "baseline_rate": 0.006305861709711027,
+          "lift": 4.9438223334375975
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 251,
+          "cooccur_rate_given_fp": 0.12038369304556355,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 4.731546142396428
+        },
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 47,
+          "cooccur_rate_given_fp": 0.022541966426858514,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 4.671566383257031
+        },
+        {
+          "confused_with_label": "CCSR_MBD018",
+          "cooccur_count": 249,
+          "cooccur_rate_given_fp": 0.11942446043165468,
+          "baseline_rate": 0.027581290782475187,
+          "lift": 4.329908319864983
+        }
+      ]
+    },
+    "CCSR_DIG001": {
+      "label": "CCSR_DIG001",
+      "category": "DIG",
+      "fp_count": 670,
+      "train_support": 4217,
+      "num_candidate_confusions": 244,
+      "same_category_confusions": 22,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 41,
+          "cooccur_rate_given_fp": 0.06119402985074627,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 19.24130211013896
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.026865671641791045,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 17.498187633262262
+        },
+        {
+          "confused_with_label": "CCSR_MAL009",
+          "cooccur_count": 14,
+          "cooccur_rate_given_fp": 0.020895522388059702,
+          "baseline_rate": 0.0014805066622799803,
+          "lift": 14.113764510779436
+        },
+        {
+          "confused_with_label": "CCSR_NVS022",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.008955223880597015,
+          "baseline_rate": 0.0006580029610133246,
+          "lift": 13.609701492537313
+        },
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 35,
+          "cooccur_rate_given_fp": 0.05223880597014925,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 12.059229170602682
+        }
+      ]
+    },
+    "CCSR_DIG003": {
+      "label": "CCSR_DIG003",
+      "category": "DIG",
+      "fp_count": 168,
+      "train_support": 2397,
+      "num_candidate_confusions": 134,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.03571428571428571,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 59.21103896103896
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 70,
+          "cooccur_rate_given_fp": 0.4166666666666667,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 47.197204968944106
+        },
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 28,
+          "cooccur_rate_given_fp": 0.16666666666666666,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 38.474683544303794
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.125,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 28.4953125
+        },
+        {
+          "confused_with_label": "CCSR_NEO064",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.05952380952380952,
+          "baseline_rate": 0.0029610133245599607,
+          "lift": 20.102513227513224
+        }
+      ]
+    },
+    "CCSR_DIG008": {
+      "label": "CCSR_DIG008",
+      "category": "DIG",
+      "fp_count": 237,
+      "train_support": 6029,
+      "num_candidate_confusions": 147,
+      "same_category_confusions": 15,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 14,
+          "cooccur_rate_given_fp": 0.05907172995780591,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 41.43427458617332
+        },
+        {
+          "confused_with_label": "CCSR_FAC024",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.012658227848101266,
+          "baseline_rate": 0.000767670121182212,
+          "lift": 16.48915009041591
+        },
+        {
+          "confused_with_label": "CCSR_DIG018",
+          "cooccur_count": 29,
+          "cooccur_rate_given_fp": 0.12236286919831224,
+          "baseline_rate": 0.01650490760541756,
+          "lift": 7.413726397241263
+        },
+        {
+          "confused_with_label": "CCSR_CIR004",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.016877637130801686,
+          "baseline_rate": 0.0023578439436310796,
+          "lift": 7.158080659405357
+        },
+        {
+          "confused_with_label": "CCSR_MUS023",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.012658227848101266,
+          "baseline_rate": 0.0020288424631244176,
+          "lift": 6.239137872049263
+        }
+      ]
+    },
+    "CCSR_DIG011": {
+      "label": "CCSR_DIG011",
+      "category": "DIG",
+      "fp_count": 2720,
+      "train_support": 3692,
+      "num_candidate_confusions": 328,
+      "same_category_confusions": 24,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0011029411764705882,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.704779411764706
+        },
+        {
+          "confused_with_label": "CCSR_NEO038",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.002573529411764706,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 6.704779411764706
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0011029411764705882,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.704779411764706
+        },
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.004044117647058824,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 6.704779411764706
+        },
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0029411764705882353,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 6.704779411764706
+        }
+      ]
+    },
+    "CCSR_DIG017": {
+      "label": "CCSR_DIG017",
+      "category": "DIG",
+      "fp_count": 1741,
+      "train_support": 5327,
+      "num_candidate_confusions": 281,
+      "same_category_confusions": 24,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0017231476163124641,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 10.475014359563469
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.002871912693854107,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 10.475014359563469
+        },
+        {
+          "confused_with_label": "CCSR_NEO011",
+          "cooccur_count": 19,
+          "cooccur_rate_given_fp": 0.010913268236645606,
+          "baseline_rate": 0.001151505181773318,
+          "lift": 9.477393944366948
+        },
+        {
+          "confused_with_label": "CCSR_NEO038",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.0034462952326249283,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 8.97858373676869
+        },
+        {
+          "confused_with_label": "CCSR_NEO032",
+          "cooccur_count": 23,
+          "cooccur_rate_given_fp": 0.013210798391728892,
+          "baseline_rate": 0.0014805066622799803,
+          "lift": 8.92316038036888
+        }
+      ]
+    },
+    "CCSR_DIG018": {
+      "label": "CCSR_DIG018",
+      "category": "DIG",
+      "fp_count": 85,
+      "train_support": 2928,
+      "num_candidate_confusions": 80,
+      "same_category_confusions": 5,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 63,
+          "cooccur_rate_given_fp": 0.7411764705882353,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 25.35991612404812
+        },
+        {
+          "confused_with_label": "CCSR_INF010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.03529411764705882,
+          "baseline_rate": 0.0023578439436310796,
+          "lift": 14.968809849521204
+        },
+        {
+          "confused_with_label": "CCSR_RSP005",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.03529411764705882,
+          "baseline_rate": 0.004496353566924385,
+          "lift": 7.849497847919655
+        },
+        {
+          "confused_with_label": "CCSR_CIR028",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.03529411764705882,
+          "baseline_rate": 0.004551187147008828,
+          "lift": 7.7549255846917085
+        },
+        {
+          "confused_with_label": "CCSR_MBD013",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.03529411764705882,
+          "baseline_rate": 0.004715687887262159,
+          "lift": 7.484404924760602
+        }
+      ]
+    },
+    "CCSR_DIG019": {
+      "label": "CCSR_DIG019",
+      "category": "DIG",
+      "fp_count": 3645,
+      "train_support": 12933,
+      "num_candidate_confusions": 276,
+      "same_category_confusions": 23,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 616,
+          "cooccur_rate_given_fp": 0.16899862825788753,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 4.280594421582076
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 386,
+          "cooccur_rate_given_fp": 0.10589849108367627,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 4.16222151270044
+        },
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 73,
+          "cooccur_rate_given_fp": 0.020027434842249656,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 4.150458286569397
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 313,
+          "cooccur_rate_given_fp": 0.08587105624142662,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 4.067611565389344
+        },
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 425,
+          "cooccur_rate_given_fp": 0.11659807956104253,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 3.9894918892208864
+        }
+      ]
+    },
+    "CCSR_DIG020": {
+      "label": "CCSR_DIG020",
+      "category": "DIG",
+      "fp_count": 2945,
+      "train_support": 5264,
+      "num_candidate_confusions": 247,
+      "same_category_confusions": 23,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MBD017",
+          "cooccur_count": 1400,
+          "cooccur_rate_given_fp": 0.47538200339558573,
+          "baseline_rate": 0.10911882436804299,
+          "lift": 4.356553565791606
+        },
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 53,
+          "cooccur_rate_given_fp": 0.01799660441426146,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 3.729591757987344
+        },
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 426,
+          "cooccur_rate_given_fp": 0.14465195246179965,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 3.6639134125636668
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 266,
+          "cooccur_rate_given_fp": 0.09032258064516129,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 3.550027808676307
+        },
+        {
+          "confused_with_label": "CCSR_MBD023",
+          "cooccur_count": 60,
+          "cooccur_rate_given_fp": 0.02037351443123939,
+          "baseline_rate": 0.006305861709711027,
+          "lift": 3.2308850668044586
+        }
+      ]
+    },
+    "CCSR_DIG021": {
+      "label": "CCSR_DIG021",
+      "category": "DIG",
+      "fp_count": 30,
+      "train_support": 4413,
+      "num_candidate_confusions": 42,
+      "same_category_confusions": 5,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.13333333333333333,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 93.52307692307693
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.26666666666666666,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 48.150495049504954
+        },
+        {
+          "confused_with_label": "CCSR_DIG018",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.16666666666666666,
+          "baseline_rate": 0.01650490760541756,
+          "lift": 10.098006644518271
+        },
+        {
+          "confused_with_label": "CCSR_CIR039",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.3333333333333333,
+          "baseline_rate": 0.0348741569337062,
+          "lift": 9.55817610062893
+        },
+        {
+          "confused_with_label": "CCSR_DIG019",
+          "cooccur_count": 20,
+          "cooccur_rate_given_fp": 0.6666666666666666,
+          "baseline_rate": 0.07753468223940341,
+          "lift": 8.598302687411598
+        }
+      ]
+    },
+    "CCSR_DIG022": {
+      "label": "CCSR_DIG022",
+      "category": "DIG",
+      "fp_count": 2207,
+      "train_support": 5318,
+      "num_candidate_confusions": 312,
+      "same_category_confusions": 24,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO031",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.006796556411418215,
+          "baseline_rate": 0.0008225037012666557,
+          "lift": 8.263253285002266
+        },
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.001359311282283643,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 8.263253285002266
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.001359311282283643,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 8.263253285002266
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0022655188038060714,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 8.263253285002264
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0022655188038060714,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 8.263253285002264
+        }
+      ]
+    },
+    "CCSR_DIG025": {
+      "label": "CCSR_DIG025",
+      "category": "DIG",
+      "fp_count": 1462,
+      "train_support": 14470,
+      "num_candidate_confusions": 273,
+      "same_category_confusions": 24,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.003419972640218878,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 12.474008207934336
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.002051983584131327,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 12.474008207934336
+        },
+        {
+          "confused_with_label": "CCSR_NEO040",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0027359781121751026,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 9.979206566347468
+        },
+        {
+          "confused_with_label": "CCSR_NEO032",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.014363885088919288,
+          "baseline_rate": 0.0014805066622799803,
+          "lift": 9.702006383948929
+        },
+        {
+          "confused_with_label": "CCSR_NEO011",
+          "cooccur_count": 16,
+          "cooccur_rate_given_fp": 0.01094391244870041,
+          "baseline_rate": 0.001151505181773318,
+          "lift": 9.504006253664256
+        }
+      ]
+    },
+    "CCSR_END001": {
+      "label": "CCSR_END001",
+      "category": "END",
+      "fp_count": 1324,
+      "train_support": 20293,
+      "num_candidate_confusions": 271,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.011329305135951661,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 7.379019205869659
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 31,
+          "cooccur_rate_given_fp": 0.023413897280966767,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 5.8493047220957655
+        },
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 33,
+          "cooccur_rate_given_fp": 0.024924471299093656,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 4.500471119619515
+        },
+        {
+          "confused_with_label": "CCSR_BLD005",
+          "cooccur_count": 39,
+          "cooccur_rate_given_fp": 0.02945619335347432,
+          "baseline_rate": 0.006689696770302133,
+          "lift": 4.40321801792878
+        },
+        {
+          "confused_with_label": "CCSR_NVS008",
+          "cooccur_count": 84,
+          "cooccur_rate_given_fp": 0.0634441087613293,
+          "baseline_rate": 0.01447606514229314,
+          "lift": 4.3826901950013735
+        }
+      ]
+    },
+    "CCSR_END002": {
+      "label": "CCSR_END002",
+      "category": "END",
+      "fp_count": 2817,
+      "train_support": 22685,
+      "num_candidate_confusions": 275,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.007454739084132056,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 4.119759899312615
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0024849130280440185,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 4.119759899312615
+        },
+        {
+          "confused_with_label": "CCSR_CIR001",
+          "cooccur_count": 198,
+          "cooccur_rate_given_fp": 0.07028753993610223,
+          "baseline_rate": 0.020343258211328617,
+          "lift": 3.4550778054304487
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 362,
+          "cooccur_rate_given_fp": 0.12850550230741925,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 3.3054370177438717
+        },
+        {
+          "confused_with_label": "CCSR_INJ025",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010649627263045794,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 3.236954206602769
+        }
+      ]
+    },
+    "CCSR_END003": {
+      "label": "CCSR_END003",
+      "category": "END",
+      "fp_count": 3598,
+      "train_support": 25097,
+      "num_candidate_confusions": 285,
+      "same_category_confusions": 12,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.005836575875486381,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 4.093909009278659
+        },
+        {
+          "confused_with_label": "CCSR_CIR005",
+          "cooccur_count": 346,
+          "cooccur_rate_given_fp": 0.09616453585325181,
+          "baseline_rate": 0.03366781817184844,
+          "lift": 2.8562746585598586
+        },
+        {
+          "confused_with_label": "CCSR_CIR001",
+          "cooccur_count": 209,
+          "cooccur_rate_given_fp": 0.058087826570316844,
+          "baseline_rate": 0.020343258211328617,
+          "lift": 2.8553846176896718
+        },
+        {
+          "confused_with_label": "CCSR_INJ040",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0019455252918287938,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 2.7292726728524395
+        },
+        {
+          "confused_with_label": "CCSR_CIR003",
+          "cooccur_count": 424,
+          "cooccur_rate_given_fp": 0.1178432462479155,
+          "baseline_rate": 0.04688271097219938,
+          "lift": 2.51357576821431
+        }
+      ]
+    },
+    "CCSR_END008": {
+      "label": "CCSR_END008",
+      "category": "END",
+      "fp_count": 1005,
+      "train_support": 6588,
+      "num_candidate_confusions": 269,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0029850746268656717,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 18.14626865671642
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.003980099502487562,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 14.517014925373132
+        },
+        {
+          "confused_with_label": "CCSR_NEO033",
+          "cooccur_count": 52,
+          "cooccur_rate_given_fp": 0.051741293532338306,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 11.79507462686567
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0029850746268656717,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 10.887761194029851
+        },
+        {
+          "confused_with_label": "CCSR_NEO040",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0029850746268656717,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 10.887761194029851
+        }
+      ]
+    },
+    "CCSR_END010": {
+      "label": "CCSR_END010",
+      "category": "END",
+      "fp_count": 3380,
+      "train_support": 52559,
+      "num_candidate_confusions": 300,
+      "same_category_confusions": 12,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INJ072",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0008875739644970414,
+          "baseline_rate": 0.00021933432033777484,
+          "lift": 4.046671597633136
+        },
+        {
+          "confused_with_label": "CCSR_NEO026",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.002366863905325444,
+          "baseline_rate": 0.0008773372813510994,
+          "lift": 2.6977810650887575
+        },
+        {
+          "confused_with_label": "CCSR_CIR027",
+          "cooccur_count": 28,
+          "cooccur_rate_given_fp": 0.008284023668639054,
+          "baseline_rate": 0.0031255140648132917,
+          "lift": 2.6504515727187794
+        },
+        {
+          "confused_with_label": "CCSR_CIR018",
+          "cooccur_count": 32,
+          "cooccur_rate_given_fp": 0.009467455621301775,
+          "baseline_rate": 0.003673849865657729,
+          "lift": 2.576984897995231
+        },
+        {
+          "confused_with_label": "CCSR_INJ040",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.0017751479289940828,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 2.4902594446973145
+        }
+      ]
+    },
+    "CCSR_END011": {
+      "label": "CCSR_END011",
+      "category": "END",
+      "fp_count": 11,
+      "train_support": 33400,
+      "num_candidate_confusions": 12,
+      "same_category_confusions": 2,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INJ030",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2727272727272727,
+          "baseline_rate": 0.036957832976915066,
+          "lift": 7.379417318586457
+        },
+        {
+          "confused_with_label": "CCSR_INF007",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2727272727272727,
+          "baseline_rate": 0.06569062894116356,
+          "lift": 4.151692214296554
+        },
+        {
+          "confused_with_label": "CCSR_DIG019",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2727272727272727,
+          "baseline_rate": 0.07753468223940341,
+          "lift": 3.517487463032017
+        },
+        {
+          "confused_with_label": "CCSR_CIR019",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.5454545454545454,
+          "baseline_rate": 0.22059549267971706,
+          "lift": 2.4726459223103516
+        },
+        {
+          "confused_with_label": "CCSR_GEN003",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.5454545454545454,
+          "baseline_rate": 0.22267916872292592,
+          "lift": 2.449508629759799
+        }
+      ]
+    },
+    "CCSR_END015": {
+      "label": "CCSR_END015",
+      "category": "END",
+      "fp_count": 441,
+      "train_support": 4590,
+      "num_candidate_confusions": 217,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 33,
+          "cooccur_rate_given_fp": 0.07482993197278912,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 23.528852920478535
+        },
+        {
+          "confused_with_label": "CCSR_INJ039",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.013605442176870748,
+          "baseline_rate": 0.0006580029610133246,
+          "lift": 20.67687074829932
+        },
+        {
+          "confused_with_label": "CCSR_MUS004",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.006802721088435374,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 20.67687074829932
+        },
+        {
+          "confused_with_label": "CCSR_MAL009",
+          "cooccur_count": 13,
+          "cooccur_rate_given_fp": 0.02947845804988662,
+          "baseline_rate": 0.0014805066622799803,
+          "lift": 19.91106072058453
+        },
+        {
+          "confused_with_label": "CCSR_NVS022",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.011337868480725623,
+          "baseline_rate": 0.0006580029610133246,
+          "lift": 17.230725623582767
+        }
+      ]
+    },
+    "CCSR_END016": {
+      "label": "CCSR_END016",
+      "category": "END",
+      "fp_count": 31,
+      "train_support": 11320,
+      "num_candidate_confusions": 49,
+      "same_category_confusions": 5,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.16129032258064516,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 105.05184331797236
+        },
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 13,
+          "cooccur_rate_given_fp": 0.41935483870967744,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 75.72053656978602
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.12903225806451613,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 40.57174638487208
+        },
+        {
+          "confused_with_label": "CCSR_NVS008",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.4838709677419355,
+          "baseline_rate": 0.01447606514229314,
+          "lift": 33.42558651026393
+        },
+        {
+          "confused_with_label": "CCSR_GEN005",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.1935483870967742,
+          "baseline_rate": 0.009924877995284312,
+          "lift": 19.501336660131884
+        }
+      ]
+    },
+    "CCSR_EYE003": {
+      "label": "CCSR_EYE003",
+      "category": "EYE",
+      "fp_count": 947,
+      "train_support": 3873,
+      "num_candidate_confusions": 241,
+      "same_category_confusions": 6,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INJ045",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0031678986272439284,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 11.554593453009504
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 31,
+          "cooccur_rate_given_fp": 0.03273495248152059,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 8.177908608294397
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.009503695881731784,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 6.189960778397948
+        },
+        {
+          "confused_with_label": "CCSR_NEO039",
+          "cooccur_count": 32,
+          "cooccur_rate_given_fp": 0.0337909186906019,
+          "baseline_rate": 0.005647858748697702,
+          "lift": 5.982961011267057
+        },
+        {
+          "confused_with_label": "CCSR_INJ041",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.004223864836325237,
+          "baseline_rate": 0.000767670121182212,
+          "lift": 5.502187358575954
+        }
+      ]
+    },
+    "CCSR_FAC006": {
+      "label": "CCSR_FAC006",
+      "category": "FAC",
+      "fp_count": 2504,
+      "train_support": 4147,
+      "num_candidate_confusions": 332,
+      "same_category_confusions": 10,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0011980830670926517,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.28314696485623
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.001996805111821086,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 7.283146964856229
+        },
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 74,
+          "cooccur_rate_given_fp": 0.029552715654952075,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 6.822188296194443
+        },
+        {
+          "confused_with_label": "CCSR_NEO020",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0027955271565495207,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 6.372753594249201
+        },
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0027955271565495207,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 6.372753594249201
+        }
+      ]
+    },
+    "CCSR_FAC010": {
+      "label": "CCSR_FAC010",
+      "category": "FAC",
+      "fp_count": 2797,
+      "train_support": 4272,
+      "num_candidate_confusions": 319,
+      "same_category_confusions": 8,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.001787629603146228,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.520200214515552
+        },
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010725777618877368,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.520200214515552
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.001787629603146228,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.520200214515552
+        },
+        {
+          "confused_with_label": "CCSR_NEO038",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0025026814444047193,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 6.520200214515552
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010725777618877368,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.520200214515552
+        }
+      ]
+    },
+    "CCSR_FAC025": {
+      "label": "CCSR_FAC025",
+      "category": "FAC",
+      "fp_count": 3317,
+      "train_support": 40269,
+      "num_candidate_confusions": 296,
+      "same_category_confusions": 6,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0009044317154054868,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 5.498040397949954
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0012059089538739825,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 4.398432318359964
+        },
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 20,
+          "cooccur_rate_given_fp": 0.006029544769369913,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 4.229261844576889
+        },
+        {
+          "confused_with_label": "CCSR_INJ019",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0009044317154054868,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 2.749020198974977
+        },
+        {
+          "confused_with_label": "CCSR_CIR027",
+          "cooccur_count": 28,
+          "cooccur_rate_given_fp": 0.008441362677117878,
+          "baseline_rate": 0.0031255140648132917,
+          "lift": 2.700791774431557
+        }
+      ]
+    },
+    "CCSR_GEN002": {
+      "label": "CCSR_GEN002",
+      "category": "GEN",
+      "fp_count": 3420,
+      "train_support": 24391,
+      "num_candidate_confusions": 278,
+      "same_category_confusions": 18,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0023391812865497076,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.8781499202551832
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 22,
+          "cooccur_rate_given_fp": 0.006432748538011696,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.5549707602339184
+        },
+        {
+          "confused_with_label": "CCSR_CIR026",
+          "cooccur_count": 663,
+          "cooccur_rate_given_fp": 0.193859649122807,
+          "baseline_rate": 0.07122882052969239,
+          "lift": 2.7216462055832418
+        },
+        {
+          "confused_with_label": "CCSR_INJ025",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0008771929824561404,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 2.6662280701754386
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 338,
+          "cooccur_rate_given_fp": 0.09883040935672514,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 2.5421300076707993
+        }
+      ]
+    },
+    "CCSR_GEN003": {
+      "label": "CCSR_GEN003",
+      "category": "GEN",
+      "fp_count": 3349,
+      "train_support": 33581,
+      "num_candidate_confusions": 295,
+      "same_category_confusions": 19,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.0017915795759928337,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 2.9702760661255736
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 17,
+          "cooccur_rate_given_fp": 0.005076142131979695,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 2.8052607291185967
+        },
+        {
+          "confused_with_label": "CCSR_INJ019",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0008957897879964168,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 2.722753060615109
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 34,
+          "cooccur_rate_given_fp": 0.01015228426395939,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 2.5362631249565393
+        },
+        {
+          "confused_with_label": "CCSR_CIR020",
+          "cooccur_count": 77,
+          "cooccur_rate_given_fp": 0.02299193789190803,
+          "baseline_rate": 0.009705543674946537,
+          "lift": 2.3689489905916767
+        }
+      ]
+    },
+    "CCSR_GEN004": {
+      "label": "CCSR_GEN004",
+      "category": "GEN",
+      "fp_count": 1429,
+      "train_support": 13586,
+      "num_candidate_confusions": 280,
+      "same_category_confusions": 16,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.002099370188943317,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 12.762071378586423
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 20,
+          "cooccur_rate_given_fp": 0.013995801259622114,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 9.115765270418875
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 64,
+          "cooccur_rate_given_fp": 0.04478656403079076,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 8.086857111183477
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 36,
+          "cooccur_rate_given_fp": 0.025192442267319804,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 6.293624241494674
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 81,
+          "cooccur_rate_given_fp": 0.05668299510146956,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 5.742932120363891
+        }
+      ]
+    },
+    "CCSR_GEN006": {
+      "label": "CCSR_GEN006",
+      "category": "GEN",
+      "fp_count": 1603,
+      "train_support": 4813,
+      "num_candidate_confusions": 282,
+      "same_category_confusions": 16,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0018714909544603868,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 11.37679351216469
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 26,
+          "cooccur_rate_given_fp": 0.016219588271990017,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 10.564165404152927
+        },
+        {
+          "confused_with_label": "CCSR_NEO004",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.002495321272613849,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 9.101434809731753
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 67,
+          "cooccur_rate_given_fp": 0.041796631316281974,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 7.546981834802321
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 114,
+          "cooccur_rate_given_fp": 0.07111665626949469,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 7.205302557704304
+        }
+      ]
+    },
+    "CCSR_GEN007": {
+      "label": "CCSR_GEN007",
+      "category": "GEN",
+      "fp_count": 610,
+      "train_support": 2745,
+      "num_candidate_confusions": 220,
+      "same_category_confusions": 14,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 124,
+          "cooccur_rate_given_fp": 0.20327868852459016,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 23.026046227471745
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.03442622950819672,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 22.42254098360656
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 57,
+          "cooccur_rate_given_fp": 0.09344262295081968,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 21.30141393442623
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 39,
+          "cooccur_rate_given_fp": 0.06393442622950819,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 20.102967778405876
+        },
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.011475409836065573,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 19.025186289120715
+        }
+      ]
+    },
+    "CCSR_GEN012": {
+      "label": "CCSR_GEN012",
+      "category": "GEN",
+      "fp_count": 4219,
+      "train_support": 8933,
+      "num_candidate_confusions": 301,
+      "same_category_confusions": 19,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0011851149561507466,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 4.322588291064233
+        },
+        {
+          "confused_with_label": "CCSR_INJ072",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.000711068973690448,
+          "baseline_rate": 0.00021933432033777484,
+          "lift": 3.241941218298175
+        },
+        {
+          "confused_with_label": "CCSR_CIR001",
+          "cooccur_count": 229,
+          "cooccur_rate_given_fp": 0.0542782649917042,
+          "baseline_rate": 0.020343258211328617,
+          "lift": 2.6681205354547424
+        },
+        {
+          "confused_with_label": "CCSR_CIR014",
+          "cooccur_count": 589,
+          "cooccur_rate_given_fp": 0.13960654183455795,
+          "baseline_rate": 0.05450457860393705,
+          "lift": 2.5613727398760897
+        },
+        {
+          "confused_with_label": "CCSR_CIR003",
+          "cooccur_count": 504,
+          "cooccur_rate_given_fp": 0.11945958757999527,
+          "baseline_rate": 0.04688271097219938,
+          "lift": 2.5480520452589164
+        }
+      ]
+    },
+    "CCSR_INF002": {
+      "label": "CCSR_INF002",
+      "category": "INF",
+      "fp_count": 2125,
+      "train_support": 6241,
+      "num_candidate_confusions": 295,
+      "same_category_confusions": 8,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.001411764705882353,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 8.582117647058825
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 26,
+          "cooccur_rate_given_fp": 0.01223529411764706,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 7.9691092436974795
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 134,
+          "cooccur_rate_given_fp": 0.06305882352941176,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 6.388909803921568
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 116,
+          "cooccur_rate_given_fp": 0.054588235294117646,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 6.183389112166606
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 71,
+          "cooccur_rate_given_fp": 0.033411764705882356,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 6.032973791496798
+        }
+      ]
+    },
+    "CCSR_INF006": {
+      "label": "CCSR_INF006",
+      "category": "INF",
+      "fp_count": 2503,
+      "train_support": 4065,
+      "num_candidate_confusions": 258,
+      "same_category_confusions": 8,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 313,
+          "cooccur_rate_given_fp": 0.1250499400719137,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 5.923469498938935
+        },
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 70,
+          "cooccur_rate_given_fp": 0.02796644027167399,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 5.795726945846802
+        },
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 516,
+          "cooccur_rate_given_fp": 0.20615261685976827,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 5.2216739912105465
+        },
+        {
+          "confused_with_label": "CCSR_MBD010",
+          "cooccur_count": 53,
+          "cooccur_rate_given_fp": 0.02117459049141031,
+          "baseline_rate": 0.004112518506333278,
+          "lift": 5.148813423891331
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 319,
+          "cooccur_rate_given_fp": 0.12744706352377147,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 5.009164003196164
+        }
+      ]
+    },
+    "CCSR_INF007": {
+      "label": "CCSR_INF007",
+      "category": "INF",
+      "fp_count": 3528,
+      "train_support": 10048,
+      "num_candidate_confusions": 278,
+      "same_category_confusions": 8,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 518,
+          "cooccur_rate_given_fp": 0.14682539682539683,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 3.718964947089947
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 273,
+          "cooccur_rate_given_fp": 0.07738095238095238,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 3.665445269016698
+        },
+        {
+          "confused_with_label": "CCSR_MBD017",
+          "cooccur_count": 1406,
+          "cooccur_rate_given_fp": 0.39852607709750565,
+          "baseline_rate": 0.10911882436804299,
+          "lift": 3.652221139712166
+        },
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 372,
+          "cooccur_rate_given_fp": 0.1054421768707483,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 3.607784201860857
+        },
+        {
+          "confused_with_label": "CCSR_MBD019",
+          "cooccur_count": 132,
+          "cooccur_rate_given_fp": 0.03741496598639456,
+          "baseline_rate": 0.011569885397817623,
+          "lift": 3.2338233871747755
+        }
+      ]
+    },
+    "CCSR_INJ030": {
+      "label": "CCSR_INJ030",
+      "category": "INJ",
+      "fp_count": 2474,
+      "train_support": 6244,
+      "num_candidate_confusions": 317,
+      "same_category_confusions": 26,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.002021018593371059,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 7.371463217461601
+        },
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0012126111560226355,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.371463217461601
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.002021018593371059,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 7.371463217461601
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0012126111560226355,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.371463217461601
+        },
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0012126111560226355,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.371463217461601
+        }
+      ]
+    },
+    "CCSR_INJ033": {
+      "label": "CCSR_INJ033",
+      "category": "INJ",
+      "fp_count": 928,
+      "train_support": 4141,
+      "num_candidate_confusions": 209,
+      "same_category_confusions": 18,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INJ013",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.003232758620689655,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 8.422259852216749
+        },
+        {
+          "confused_with_label": "CCSR_CIR018",
+          "cooccur_count": 17,
+          "cooccur_rate_given_fp": 0.018318965517241378,
+          "baseline_rate": 0.003673849865657729,
+          "lift": 4.986313046834791
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.008620689655172414,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 4.7641065830721
+        },
+        {
+          "confused_with_label": "CCSR_MUS033",
+          "cooccur_count": 215,
+          "cooccur_rate_given_fp": 0.23168103448275862,
+          "baseline_rate": 0.053791742062839286,
+          "lift": 4.307000026362965
+        },
+        {
+          "confused_with_label": "CCSR_CIR005",
+          "cooccur_count": 132,
+          "cooccur_rate_given_fp": 0.14224137931034483,
+          "baseline_rate": 0.03366781817184844,
+          "lift": 4.224846961698304
+        }
+      ]
+    },
+    "CCSR_INJ036": {
+      "label": "CCSR_INJ036",
+      "category": "INJ",
+      "fp_count": 1088,
+      "train_support": 4264,
+      "num_candidate_confusions": 268,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0027573529411764708,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 16.761948529411764
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.016544117647058824,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 10.775538340336135
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 63,
+          "cooccur_rate_given_fp": 0.057904411764705885,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 10.455472845078626
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 103,
+          "cooccur_rate_given_fp": 0.09466911764705882,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 9.591559436274508
+        },
+        {
+          "confused_with_label": "CCSR_MAL009",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.013786764705882353,
+          "baseline_rate": 0.0014805066622799803,
+          "lift": 9.312193627450979
+        }
+      ]
+    },
+    "CCSR_INJ037": {
+      "label": "CCSR_INJ037",
+      "category": "INJ",
+      "fp_count": 453,
+      "train_support": 5593,
+      "num_candidate_confusions": 171,
+      "same_category_confusions": 5,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO058",
+          "cooccur_count": 184,
+          "cooccur_rate_given_fp": 0.40618101545253865,
+          "baseline_rate": 0.03498382409387509,
+          "lift": 11.610537897818098
+        },
+        {
+          "confused_with_label": "CCSR_NEO051",
+          "cooccur_count": 38,
+          "cooccur_rate_given_fp": 0.08388520971302428,
+          "baseline_rate": 0.008444371333004332,
+          "lift": 9.93386084114561
+        },
+        {
+          "confused_with_label": "CCSR_FAC006",
+          "cooccur_count": 122,
+          "cooccur_rate_given_fp": 0.2693156732891832,
+          "baseline_rate": 0.02730712288205297,
+          "lift": 9.862469746535812
+        },
+        {
+          "confused_with_label": "CCSR_NEO045",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.024282560706401765,
+          "baseline_rate": 0.003673849865657729,
+          "lift": 6.6095680537708805
+        },
+        {
+          "confused_with_label": "CCSR_NEO022",
+          "cooccur_count": 36,
+          "cooccur_rate_given_fp": 0.07947019867549669,
+          "baseline_rate": 0.012173054778746504,
+          "lift": 6.528369429031681
+        }
+      ]
+    },
+    "CCSR_MBD001": {
+      "label": "CCSR_MBD001",
+      "category": "MBD",
+      "fp_count": 3961,
+      "train_support": 5740,
+      "num_candidate_confusions": 281,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 78,
+          "cooccur_rate_given_fp": 0.019691996970462006,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 4.080942599435405
+        },
+        {
+          "confused_with_label": "CCSR_MBD017",
+          "cooccur_count": 1667,
+          "cooccur_rate_given_fp": 0.42085331986872004,
+          "baseline_rate": 0.10911882436804299,
+          "lift": 3.8568351730883657
+        },
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 575,
+          "cooccur_rate_given_fp": 0.14516536228225196,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 3.676917655474207
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 368,
+          "cooccur_rate_given_fp": 0.09290583186064125,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 3.6515596026778327
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 305,
+          "cooccur_rate_given_fp": 0.07700075738449887,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 3.6474358764184567
+        }
+      ]
+    },
+    "CCSR_MBD002": {
+      "label": "CCSR_MBD002",
+      "category": "MBD",
+      "fp_count": 2182,
+      "train_support": 31593,
+      "num_candidate_confusions": 286,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0036663611365719525,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 8.357928505957837
+        },
+        {
+          "confused_with_label": "CCSR_PRG029",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.001374885426214482,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 8.357928505957837
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.002749770852428964,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 7.163938719392432
+        },
+        {
+          "confused_with_label": "CCSR_PRG011",
+          "cooccur_count": 45,
+          "cooccur_rate_given_fp": 0.020623281393217233,
+          "baseline_rate": 0.003015846904644404,
+          "lift": 6.838305141238231
+        },
+        {
+          "confused_with_label": "CCSR_PRG026",
+          "cooccur_count": 36,
+          "cooccur_rate_given_fp": 0.016498625114573784,
+          "baseline_rate": 0.0024126775237155234,
+          "lift": 6.838305141238229
+        }
+      ]
+    },
+    "CCSR_MBD003": {
+      "label": "CCSR_MBD003",
+      "category": "MBD",
+      "fp_count": 3863,
+      "train_support": 5383,
+      "num_candidate_confusions": 287,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 444,
+          "cooccur_rate_given_fp": 0.11493657778928294,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 3.9326423436081672
+        },
+        {
+          "confused_with_label": "CCSR_MBD010",
+          "cooccur_count": 62,
+          "cooccur_rate_given_fp": 0.01604970230390888,
+          "baseline_rate": 0.004112518506333278,
+          "lift": 3.9026456122184836
+        },
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 71,
+          "cooccur_rate_given_fp": 0.018379497799637587,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 3.8089420610453484
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 365,
+          "cooccur_rate_given_fp": 0.09448615066010872,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 3.7136722620439713
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 295,
+          "cooccur_rate_given_fp": 0.07636551902666322,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 3.6173453778941744
+        }
+      ]
+    },
+    "CCSR_MBD005": {
+      "label": "CCSR_MBD005",
+      "category": "MBD",
+      "fp_count": 2759,
+      "train_support": 20233,
+      "num_candidate_confusions": 309,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG015",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010873504893077202,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.610003624501631
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0025371511417180137,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 6.610003624501631
+        },
+        {
+          "confused_with_label": "CCSR_PRG021",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.0021747009786154403,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 6.610003624501631
+        },
+        {
+          "confused_with_label": "CCSR_PRG011",
+          "cooccur_count": 52,
+          "cooccur_rate_given_fp": 0.018847408481333816,
+          "baseline_rate": 0.003015846904644404,
+          "lift": 6.249457972256088
+        },
+        {
+          "confused_with_label": "CCSR_PRG026",
+          "cooccur_count": 41,
+          "cooccur_rate_given_fp": 0.014860456687205509,
+          "baseline_rate": 0.0024126775237155234,
+          "lift": 6.1593215591947015
+        }
+      ]
+    },
+    "CCSR_MBD007": {
+      "label": "CCSR_MBD007",
+      "category": "MBD",
+      "fp_count": 3768,
+      "train_support": 5572,
+      "num_candidate_confusions": 310,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0021231422505307855,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 4.839968152866242
+        },
+        {
+          "confused_with_label": "CCSR_PRG015",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0007961783439490446,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.839968152866242
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0018577494692144374,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 4.839968152866242
+        },
+        {
+          "confused_with_label": "CCSR_PRG029",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0007961783439490446,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.839968152866242
+        },
+        {
+          "confused_with_label": "CCSR_PRG026",
+          "cooccur_count": 40,
+          "cooccur_rate_given_fp": 0.010615711252653927,
+          "baseline_rate": 0.0024126775237155234,
+          "lift": 4.39997104806022
+        }
+      ]
+    },
+    "CCSR_MBD009": {
+      "label": "CCSR_MBD009",
+      "category": "MBD",
+      "fp_count": 623,
+      "train_support": 2083,
+      "num_candidate_confusions": 191,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 249,
+          "cooccur_rate_given_fp": 0.3996789727126806,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 13.675319747394289
+        },
+        {
+          "confused_with_label": "CCSR_MBD020",
+          "cooccur_count": 33,
+          "cooccur_rate_given_fp": 0.052969502407704656,
+          "baseline_rate": 0.004825355047431047,
+          "lift": 10.977327447833066
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 142,
+          "cooccur_rate_given_fp": 0.22792937399678972,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 8.958508606852272
+        },
+        {
+          "confused_with_label": "CCSR_MBD018",
+          "cooccur_count": 138,
+          "cooccur_rate_given_fp": 0.22150882825040127,
+          "baseline_rate": 0.027581290782475187,
+          "lift": 8.031126244140294
+        },
+        {
+          "confused_with_label": "CCSR_MBD025",
+          "cooccur_count": 65,
+          "cooccur_rate_given_fp": 0.1043338683788122,
+          "baseline_rate": 0.014366397982124253,
+          "lift": 7.262354036734344
+        }
+      ]
+    },
+    "CCSR_MBD012": {
+      "label": "CCSR_MBD012",
+      "category": "MBD",
+      "fp_count": 3524,
+      "train_support": 5314,
+      "num_candidate_confusions": 284,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 392,
+          "cooccur_rate_given_fp": 0.1112372304199773,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 3.8060663624186226
+        },
+        {
+          "confused_with_label": "CCSR_MBD017",
+          "cooccur_count": 1398,
+          "cooccur_rate_given_fp": 0.3967082860385925,
+          "baseline_rate": 0.10911882436804299,
+          "lift": 3.6355623178320657
+        },
+        {
+          "confused_with_label": "CCSR_MBD010",
+          "cooccur_count": 50,
+          "cooccur_rate_given_fp": 0.014188422247446084,
+          "baseline_rate": 0.004112518506333278,
+          "lift": 3.45005675368899
+        },
+        {
+          "confused_with_label": "CCSR_NVS003",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0014188422247446084,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 3.234428206583428
+        },
+        {
+          "confused_with_label": "CCSR_MBD018",
+          "cooccur_count": 311,
+          "cooccur_rate_given_fp": 0.08825198637911465,
+          "baseline_rate": 0.027581290782475187,
+          "lift": 3.1997047228546998
+        }
+      ]
+    },
+    "CCSR_MBD014": {
+      "label": "CCSR_MBD014",
+      "category": "MBD",
+      "fp_count": 578,
+      "train_support": 2566,
+      "num_candidate_confusions": 199,
+      "same_category_confusions": 20,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.01384083044982699,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 31.551903114186853
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.010380622837370242,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 27.044488383588728
+        },
+        {
+          "confused_with_label": "CCSR_PRG014",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.00865051903114187,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 26.29325259515571
+        },
+        {
+          "confused_with_label": "CCSR_PRG013",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.025951557093425604,
+          "baseline_rate": 0.000987004441519987,
+          "lift": 26.293252595155707
+        },
+        {
+          "confused_with_label": "CCSR_PRG011",
+          "cooccur_count": 44,
+          "cooccur_rate_given_fp": 0.07612456747404844,
+          "baseline_rate": 0.003015846904644404,
+          "lift": 25.241522491349482
+        }
+      ]
+    },
+    "CCSR_MBD017": {
+      "label": "CCSR_MBD017",
+      "category": "MBD",
+      "fp_count": 2664,
+      "train_support": 12960,
+      "num_candidate_confusions": 276,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 347,
+          "cooccur_rate_given_fp": 0.13025525525525525,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 4.456782533002045
+        },
+        {
+          "confused_with_label": "CCSR_MBD026",
+          "cooccur_count": 168,
+          "cooccur_rate_given_fp": 0.06306306306306306,
+          "baseline_rate": 0.015134068103306465,
+          "lift": 4.166960438699569
+        },
+        {
+          "confused_with_label": "CCSR_MBD018",
+          "cooccur_count": 281,
+          "cooccur_rate_given_fp": 0.10548048048048048,
+          "baseline_rate": 0.027581290782475187,
+          "lift": 3.824348951337023
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 210,
+          "cooccur_rate_given_fp": 0.07882882882882883,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 3.734029484029484
+        },
+        {
+          "confused_with_label": "CCSR_INJ032",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.002627627627627628,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 3.6861573111573116
+        }
+      ]
+    },
+    "CCSR_MBD018": {
+      "label": "CCSR_MBD018",
+      "category": "MBD",
+      "fp_count": 3085,
+      "train_support": 3835,
+      "num_candidate_confusions": 279,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 439,
+          "cooccur_rate_given_fp": 0.14230145867098865,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 4.868952536177899
+        },
+        {
+          "confused_with_label": "CCSR_MBD010",
+          "cooccur_count": 56,
+          "cooccur_rate_given_fp": 0.01815235008103728,
+          "baseline_rate": 0.004112518506333278,
+          "lift": 4.413925445705025
+        },
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 521,
+          "cooccur_rate_given_fp": 0.16888168557536468,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 4.277632360886008
+        },
+        {
+          "confused_with_label": "CCSR_MBD023",
+          "cooccur_count": 80,
+          "cooccur_rate_given_fp": 0.02593192868719611,
+          "baseline_rate": 0.006305861709711027,
+          "lift": 4.1123528997251775
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 266,
+          "cooccur_rate_given_fp": 0.08622366288492707,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 4.084314129954325
+        }
+      ]
+    },
+    "CCSR_MBD021": {
+      "label": "CCSR_MBD021",
+      "category": "MBD",
+      "fp_count": 1847,
+      "train_support": 2886,
+      "num_candidate_confusions": 251,
+      "same_category_confusions": 21,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 343,
+          "cooccur_rate_given_fp": 0.1857065511640498,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 6.354090757183445
+        },
+        {
+          "confused_with_label": "CCSR_MBD023",
+          "cooccur_count": 68,
+          "cooccur_rate_given_fp": 0.036816459122902004,
+          "baseline_rate": 0.006305861709711027,
+          "lift": 5.838450130646642
+        },
+        {
+          "confused_with_label": "CCSR_MBD012",
+          "cooccur_count": 417,
+          "cooccur_rate_given_fp": 0.2257715213860314,
+          "baseline_rate": 0.039480177660799476,
+          "lift": 5.718604493773687
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 212,
+          "cooccur_rate_given_fp": 0.11478072550081213,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 5.437028807683924
+        },
+        {
+          "confused_with_label": "CCSR_MBD025",
+          "cooccur_count": 129,
+          "cooccur_rate_given_fp": 0.06984298863021116,
+          "baseline_rate": 0.014366397982124253,
+          "lift": 4.861551845989164
+        }
+      ]
+    },
+    "CCSR_MBD026": {
+      "label": "CCSR_MBD026",
+      "category": "MBD",
+      "fp_count": 250,
+      "train_support": 2885,
+      "num_candidate_confusions": 130,
+      "same_category_confusions": 18,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 123,
+          "cooccur_rate_given_fp": 0.492,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 16.834153846153846
+        },
+        {
+          "confused_with_label": "CCSR_MAL004",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.012,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 16.834153846153846
+        },
+        {
+          "confused_with_label": "CCSR_MBD018",
+          "cooccur_count": 89,
+          "cooccur_rate_given_fp": 0.356,
+          "baseline_rate": 0.027581290782475187,
+          "lift": 12.907300198807157
+        },
+        {
+          "confused_with_label": "CCSR_MBD021",
+          "cooccur_count": 61,
+          "cooccur_rate_given_fp": 0.244,
+          "baseline_rate": 0.025442781159181884,
+          "lift": 9.590146551724137
+        },
+        {
+          "confused_with_label": "CCSR_MBD025",
+          "cooccur_count": 28,
+          "cooccur_rate_given_fp": 0.112,
+          "baseline_rate": 0.014366397982124253,
+          "lift": 7.795969465648855
+        }
+      ]
+    },
+    "CCSR_MUS013": {
+      "label": "CCSR_MUS013",
+      "category": "MUS",
+      "fp_count": 2742,
+      "train_support": 7179,
+      "num_candidate_confusions": 316,
+      "same_category_confusions": 26,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010940919037199124,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.650984682713347
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 23,
+          "cooccur_rate_given_fp": 0.008388037928519328,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 5.463308846514535
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 49,
+          "cooccur_rate_given_fp": 0.01787016776075857,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 4.464359581547315
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 61,
+          "cooccur_rate_given_fp": 0.02224653537563822,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 4.016931343024893
+        },
+        {
+          "confused_with_label": "CCSR_INJ045",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010940919037199124,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 3.9905908096280083
+        }
+      ]
+    },
+    "CCSR_MUS024": {
+      "label": "CCSR_MUS024",
+      "category": "MUS",
+      "fp_count": 227,
+      "train_support": 3502,
+      "num_candidate_confusions": 156,
+      "same_category_confusions": 16,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.039647577092511016,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 25.823316551290123
+        },
+        {
+          "confused_with_label": "CCSR_NEO057",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.06607929515418502,
+          "baseline_rate": 0.004167352086417722,
+          "lift": 15.856422443774635
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.048458149779735685,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 15.236746164362753
+        },
+        {
+          "confused_with_label": "CCSR_BLD005",
+          "cooccur_count": 22,
+          "cooccur_rate_given_fp": 0.09691629955947137,
+          "baseline_rate": 0.006689696770302133,
+          "lift": 14.487397992344913
+        },
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 14,
+          "cooccur_rate_given_fp": 0.06167400881057269,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 11.136127709687269
+        }
+      ]
+    },
+    "CCSR_MUS033": {
+      "label": "CCSR_MUS033",
+      "category": "MUS",
+      "fp_count": 4498,
+      "train_support": 8830,
+      "num_candidate_confusions": 302,
+      "same_category_confusions": 25,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0006669630947087594,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.054468652734548
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0011116051578479323,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 4.054468652734548
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.0020008892841262785,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.31729253405554
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 24,
+          "cooccur_rate_given_fp": 0.005335704757670075,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 2.948704474716035
+        },
+        {
+          "confused_with_label": "CCSR_CIR027",
+          "cooccur_count": 39,
+          "cooccur_rate_given_fp": 0.008670520231213872,
+          "baseline_rate": 0.0031255140648132917,
+          "lift": 2.774110130818375
+        }
+      ]
+    },
+    "CCSR_NEO058": {
+      "label": "CCSR_NEO058",
+      "category": "NEO",
+      "fp_count": 2688,
+      "train_support": 5058,
+      "num_candidate_confusions": 329,
+      "same_category_confusions": 51,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR002",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.001488095238095238,
+          "baseline_rate": 0.00021933432033777484,
+          "lift": 6.784598214285714
+        },
+        {
+          "confused_with_label": "CCSR_NEO031",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.005580357142857143,
+          "baseline_rate": 0.0008225037012666557,
+          "lift": 6.784598214285714
+        },
+        {
+          "confused_with_label": "CCSR_NEO038",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0026041666666666665,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 6.784598214285714
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0018601190476190475,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.7845982142857135
+        },
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0011160714285714285,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.7845982142857135
+        }
+      ]
+    },
+    "CCSR_NEO060": {
+      "label": "CCSR_NEO060",
+      "category": "NEO",
+      "fp_count": 34,
+      "train_support": 1101,
+      "num_candidate_confusions": 47,
+      "same_category_confusions": 4,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.14705882352941177,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 243.8101604278075
+        },
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 14,
+          "cooccur_rate_given_fp": 0.4117647058823529,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 95.05510052122114
+        },
+        {
+          "confused_with_label": "CCSR_NEO064",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.08823529411764706,
+          "baseline_rate": 0.0029610133245599607,
+          "lift": 29.79901960784314
+        },
+        {
+          "confused_with_label": "CCSR_GEN005",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.20588235294117646,
+          "baseline_rate": 0.009924877995284312,
+          "lift": 20.744068898277543
+        },
+        {
+          "confused_with_label": "CCSR_NVS008",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.29411764705882354,
+          "baseline_rate": 0.01447606514229314,
+          "lift": 20.317513368983956
+        }
+      ]
+    },
+    "CCSR_NEO065": {
+      "label": "CCSR_NEO065",
+      "category": "NEO",
+      "fp_count": 529,
+      "train_support": 1684,
+      "num_candidate_confusions": 214,
+      "same_category_confusions": 24,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 122,
+          "cooccur_rate_given_fp": 0.23062381852551986,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 26.12351912080687
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.03969754253308128,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 25.85586011342155
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 56,
+          "cooccur_rate_given_fp": 0.10586011342155009,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 24.132136105860113
+        },
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.013232514177693762,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 21.93830555078192
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 31,
+          "cooccur_rate_given_fp": 0.05860113421550094,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 18.42601525324294
+        }
+      ]
+    },
+    "CCSR_NEO070": {
+      "label": "CCSR_NEO070",
+      "category": "NEO",
+      "fp_count": 2778,
+      "train_support": 7606,
+      "num_candidate_confusions": 330,
+      "same_category_confusions": 44,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010799136069114472,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.564794816414687
+        },
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.003959683225341973,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 6.564794816414687
+        },
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0028797696184305254,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 6.564794816414687
+        },
+        {
+          "confused_with_label": "CCSR_PRG022",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.003959683225341973,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 6.564794816414687
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 156,
+          "cooccur_rate_given_fp": 0.056155507559395246,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 6.360919200998081
+        }
+      ]
+    },
+    "CCSR_NEO074": {
+      "label": "CCSR_NEO074",
+      "category": "NEO",
+      "fp_count": 2785,
+      "train_support": 4703,
+      "num_candidate_confusions": 337,
+      "same_category_confusions": 49,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0017953321364452424,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.548294434470377
+        },
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010771992818671453,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.548294434470376
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010771992818671453,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.548294434470376
+        },
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 75,
+          "cooccur_rate_given_fp": 0.026929982046678635,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 6.216735222598459
+        },
+        {
+          "confused_with_label": "CCSR_NEO020",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0025134649910233393,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 5.72975763016158
+        }
+      ]
+    },
+    "CCSR_NEO075": {
+      "label": "CCSR_NEO075",
+      "category": "NEO",
+      "fp_count": 15,
+      "train_support": 853,
+      "num_candidate_confusions": 18,
+      "same_category_confusions": 0,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.6,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 138.50886075949367
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 62.88620689655173
+        },
+        {
+          "confused_with_label": "CCSR_GEN005",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.3333333333333333,
+          "baseline_rate": 0.009924877995284312,
+          "lift": 33.58563535911602
+        },
+        {
+          "confused_with_label": "CCSR_NVS008",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.4,
+          "baseline_rate": 0.01447606514229314,
+          "lift": 27.631818181818183
+        },
+        {
+          "confused_with_label": "CCSR_SKN003",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.5333333333333333,
+          "baseline_rate": 0.021494763393101936,
+          "lift": 24.812244897959182
+        }
+      ]
+    },
+    "CCSR_NVS005": {
+      "label": "CCSR_NVS005",
+      "category": "NVS",
+      "fp_count": 11,
+      "train_support": 957,
+      "num_candidate_confusions": 6,
+      "same_category_confusions": 2,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.36363636363636365,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 114.3385579937304
+        },
+        {
+          "confused_with_label": "CCSR_MBD014",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.45454545454545453,
+          "baseline_rate": 0.015572736743982015,
+          "lift": 29.188540332906527
+        },
+        {
+          "confused_with_label": "CCSR_NVS009",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2727272727272727,
+          "baseline_rate": 0.05302407194165707,
+          "lift": 5.143461502303281
+        },
+        {
+          "confused_with_label": "CCSR_FAC025",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.5454545454545454,
+          "baseline_rate": 0.27965125843066296,
+          "lift": 1.9504812834224596
+        },
+        {
+          "confused_with_label": "CCSR_END002",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2727272727272727,
+          "baseline_rate": 0.16126555902834896,
+          "lift": 1.6911687428518436
+        }
+      ]
+    },
+    "CCSR_NVS008": {
+      "label": "CCSR_NVS008",
+      "category": "NVS",
+      "fp_count": 82,
+      "train_support": 1889,
+      "num_candidate_confusions": 100,
+      "same_category_confusions": 8,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 19,
+          "cooccur_rate_given_fp": 0.23170731707317074,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 72.85597140454163
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 27,
+          "cooccur_rate_given_fp": 0.32926829268292684,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 37.2973034388729
+        },
+        {
+          "confused_with_label": "CCSR_NVS005",
+          "cooccur_count": 12,
+          "cooccur_rate_given_fp": 0.14634146341463414,
+          "baseline_rate": 0.004331852826671053,
+          "lift": 33.78264896573016
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.10975609756097561,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 25.0202743902439
+        },
+        {
+          "confused_with_label": "CCSR_MUS030",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.06097560975609756,
+          "baseline_rate": 0.002851346164391073,
+          "lift": 21.38484990619137
+        }
+      ]
+    },
+    "CCSR_NVS009": {
+      "label": "CCSR_NVS009",
+      "category": "NVS",
+      "fp_count": 1683,
+      "train_support": 8705,
+      "num_candidate_confusions": 297,
+      "same_category_confusions": 20,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG015",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0017825311942959,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 10.836007130124777
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0041592394533571005,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 10.836007130124777
+        },
+        {
+          "confused_with_label": "CCSR_PRG011",
+          "cooccur_count": 50,
+          "cooccur_rate_given_fp": 0.029708853238265002,
+          "baseline_rate": 0.003015846904644404,
+          "lift": 9.850915572840707
+        },
+        {
+          "confused_with_label": "CCSR_PRG022",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.0059417706476530005,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 9.850915572840707
+        },
+        {
+          "confused_with_label": "CCSR_PRG013",
+          "cooccur_count": 16,
+          "cooccur_rate_given_fp": 0.009506833036244802,
+          "baseline_rate": 0.000987004441519987,
+          "lift": 9.632006337888692
+        }
+      ]
+    },
+    "CCSR_NVS010": {
+      "label": "CCSR_NVS010",
+      "category": "NVS",
+      "fp_count": 2527,
+      "train_support": 7240,
+      "num_candidate_confusions": 320,
+      "same_category_confusions": 19,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.0031658092599920855,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 7.216857934309458
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.002770083102493075,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 7.216857934309458
+        },
+        {
+          "confused_with_label": "CCSR_PRG009",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0019786307874950534,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 7.216857934309457
+        },
+        {
+          "confused_with_label": "CCSR_PRG013",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.007123070834982192,
+          "baseline_rate": 0.000987004441519987,
+          "lift": 7.216857934309457
+        },
+        {
+          "confused_with_label": "CCSR_PRG015",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.001187178472497032,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 7.216857934309457
+        }
+      ]
+    },
+    "CCSR_NVS011": {
+      "label": "CCSR_NVS011",
+      "category": "NVS",
+      "fp_count": 4544,
+      "train_support": 6977,
+      "num_candidate_confusions": 300,
+      "same_category_confusions": 18,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_CIR010",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0006602112676056338,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 4.013424295774648
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0008802816901408451,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 3.2107394366197184
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 22,
+          "cooccur_rate_given_fp": 0.0048415492957746475,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 2.7592292033450705
+        },
+        {
+          "confused_with_label": "CCSR_MUS033",
+          "cooccur_count": 628,
+          "cooccur_rate_given_fp": 0.1382042253521127,
+          "baseline_rate": 0.053791742062839286,
+          "lift": 2.569246134298144
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0015404929577464788,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 2.5539972791293213
+        }
+      ]
+    },
+    "CCSR_NVS015": {
+      "label": "CCSR_NVS015",
+      "category": "NVS",
+      "fp_count": 11,
+      "train_support": 4050,
+      "num_candidate_confusions": 20,
+      "same_category_confusions": 2,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.45454545454545453,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 82.07470747074707
+        },
+        {
+          "confused_with_label": "CCSR_NVS008",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.6363636363636364,
+          "baseline_rate": 0.01447606514229314,
+          "lift": 43.95971074380165
+        },
+        {
+          "confused_with_label": "CCSR_GEN005",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.2727272727272727,
+          "baseline_rate": 0.009924877995284312,
+          "lift": 27.479156202913106
+        },
+        {
+          "confused_with_label": "CCSR_SKN003",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.45454545454545453,
+          "baseline_rate": 0.021494763393101936,
+          "lift": 21.146799628942485
+        },
+        {
+          "confused_with_label": "CCSR_BLD004",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.36363636363636365,
+          "baseline_rate": 0.0422766902451061,
+          "lift": 8.601344181110719
+        }
+      ]
+    },
+    "CCSR_NVS016": {
+      "label": "CCSR_NVS016",
+      "category": "NVS",
+      "fp_count": 240,
+      "train_support": 22021,
+      "num_candidate_confusions": 132,
+      "same_category_confusions": 8,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.020833333333333332,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 11.513257575757574
+        },
+        {
+          "confused_with_label": "CCSR_CIR018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.029166666666666667,
+          "baseline_rate": 0.003673849865657729,
+          "lift": 7.938992537313433
+        },
+        {
+          "confused_with_label": "CCSR_CIR016",
+          "cooccur_count": 43,
+          "cooccur_rate_given_fp": 0.17916666666666667,
+          "baseline_rate": 0.029335965345177385,
+          "lift": 6.107406542056075
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 56,
+          "cooccur_rate_given_fp": 0.23333333333333334,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 6.001833568406206
+        },
+        {
+          "confused_with_label": "CCSR_EYE002",
+          "cooccur_count": 8,
+          "cooccur_rate_given_fp": 0.03333333333333333,
+          "baseline_rate": 0.005976860229204364,
+          "lift": 5.577064220183487
+        }
+      ]
+    },
+    "CCSR_NVS019": {
+      "label": "CCSR_NVS019",
+      "category": "NVS",
+      "fp_count": 1697,
+      "train_support": 13029,
+      "num_candidate_confusions": 263,
+      "same_category_confusions": 15,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MBD010",
+          "cooccur_count": 52,
+          "cooccur_rate_given_fp": 0.030642309958750738,
+          "baseline_rate": 0.004112518506333278,
+          "lift": 7.45098408956983
+        },
+        {
+          "confused_with_label": "CCSR_NVS003",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0029463759575721863,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 6.7166322922804955
+        },
+        {
+          "confused_with_label": "CCSR_INJ032",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0041249263406010605,
+          "baseline_rate": 0.0007128365410977683,
+          "lift": 5.786637051810888
+        },
+        {
+          "confused_with_label": "CCSR_MBD009",
+          "cooccur_count": 205,
+          "cooccur_rate_given_fp": 0.12080141426045964,
+          "baseline_rate": 0.02111092833251083,
+          "lift": 5.722221797059746
+        },
+        {
+          "confused_with_label": "CCSR_INF006",
+          "cooccur_count": 275,
+          "cooccur_rate_given_fp": 0.16205067766647024,
+          "baseline_rate": 0.0292262981850085,
+          "lift": 5.544687070550503
+        }
+      ]
+    },
+    "CCSR_NVS020": {
+      "label": "CCSR_NVS020",
+      "category": "NVS",
+      "fp_count": 1065,
+      "train_support": 9785,
+      "num_candidate_confusions": 258,
+      "same_category_confusions": 16,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0028169014084507044,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 17.123943661971833
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 19,
+          "cooccur_rate_given_fp": 0.01784037558685446,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 11.619818913480884
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 51,
+          "cooccur_rate_given_fp": 0.04788732394366197,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 8.64674382931251
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 86,
+          "cooccur_rate_given_fp": 0.08075117370892018,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 8.181439749608762
+        },
+        {
+          "confused_with_label": "CCSR_NEO012",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.009389671361502348,
+          "baseline_rate": 0.0013160059220266491,
+          "lift": 7.134976525821596
+        }
+      ]
+    },
+    "CCSR_PRG023": {
+      "label": "CCSR_PRG023",
+      "category": "PRG",
+      "fp_count": 83,
+      "train_support": 739,
+      "num_candidate_confusions": 43,
+      "same_category_confusions": 12,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG014",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.03614457831325301,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 109.86144578313252
+        },
+        {
+          "confused_with_label": "CCSR_PRG011",
+          "cooccur_count": 25,
+          "cooccur_rate_given_fp": 0.30120481927710846,
+          "baseline_rate": 0.003015846904644404,
+          "lift": 99.87404162102959
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.03614457831325301,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 94.1669535283993
+        },
+        {
+          "confused_with_label": "CCSR_PRG019",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.12048192771084337,
+          "baseline_rate": 0.001370839502111093,
+          "lift": 87.88915662650602
+        },
+        {
+          "confused_with_label": "CCSR_PRG017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.04819277108433735,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 79.89923329682367
+        }
+      ]
+    },
+    "CCSR_PRG028": {
+      "label": "CCSR_PRG028",
+      "category": "PRG",
+      "fp_count": 132,
+      "train_support": 1075,
+      "num_candidate_confusions": 68,
+      "same_category_confusions": 14,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG014",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.030303030303030304,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 92.10606060606061
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.030303030303030304,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 78.94805194805195
+        },
+        {
+          "confused_with_label": "CCSR_PRG024",
+          "cooccur_count": 25,
+          "cooccur_rate_given_fp": 0.1893939393939394,
+          "baseline_rate": 0.0025223446838844106,
+          "lift": 75.08646245059289
+        },
+        {
+          "confused_with_label": "CCSR_PRG026",
+          "cooccur_count": 23,
+          "cooccur_rate_given_fp": 0.17424242424242425,
+          "baseline_rate": 0.0024126775237155234,
+          "lift": 72.21952479338843
+        },
+        {
+          "confused_with_label": "CCSR_PRG023",
+          "cooccur_count": 38,
+          "cooccur_rate_given_fp": 0.2878787878787879,
+          "baseline_rate": 0.004057684926248835,
+          "lift": 70.9465601965602
+        }
+      ]
+    },
+    "CCSR_RSP002": {
+      "label": "CCSR_RSP002",
+      "category": "RSP",
+      "fp_count": 434,
+      "train_support": 8363,
+      "num_candidate_confusions": 205,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO078",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0069124423963133645,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 42.02073732718894
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 15,
+          "cooccur_rate_given_fp": 0.03456221198156682,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 22.511109282422648
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 70,
+          "cooccur_rate_given_fp": 0.16129032258064516,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 16.341397849462364
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 35,
+          "cooccur_rate_given_fp": 0.08064516129032258,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 14.561641648035772
+        },
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 26,
+          "cooccur_rate_given_fp": 0.059907834101382486,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 10.81721950996943
+        }
+      ]
+    },
+    "CCSR_RSP008": {
+      "label": "CCSR_RSP008",
+      "category": "RSP",
+      "fp_count": 3646,
+      "train_support": 16660,
+      "num_candidate_confusions": 280,
+      "same_category_confusions": 13,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.0027427317608337905,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 4.5471999202114395
+        },
+        {
+          "confused_with_label": "CCSR_MUS032",
+          "cooccur_count": 24,
+          "cooccur_rate_given_fp": 0.006582556226001097,
+          "baseline_rate": 0.0018095081427866426,
+          "lift": 3.6377599361691515
+        },
+        {
+          "confused_with_label": "CCSR_SKN004",
+          "cooccur_count": 404,
+          "cooccur_rate_given_fp": 0.11080636313768513,
+          "baseline_rate": 0.03887700827987059,
+          "lift": 2.850177213740429
+        },
+        {
+          "confused_with_label": "CCSR_CIR022",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.004936917169500823,
+          "baseline_rate": 0.0017546745627021988,
+          "lift": 2.8135799506308286
+        },
+        {
+          "confused_with_label": "CCSR_CIR026",
+          "cooccur_count": 706,
+          "cooccur_rate_given_fp": 0.1936368623148656,
+          "baseline_rate": 0.07122882052969239,
+          "lift": 2.7185184434458844
+        }
+      ]
+    },
+    "CCSR_RSP009": {
+      "label": "CCSR_RSP009",
+      "category": "RSP",
+      "fp_count": 731,
+      "train_support": 14348,
+      "num_candidate_confusions": 234,
+      "same_category_confusions": 11,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 6,
+          "cooccur_rate_given_fp": 0.008207934336525308,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 18.711012311901506
+        },
+        {
+          "confused_with_label": "CCSR_PRG011",
+          "cooccur_count": 41,
+          "cooccur_rate_given_fp": 0.0560875512995896,
+          "baseline_rate": 0.003015846904644404,
+          "lift": 18.597612237283922
+        },
+        {
+          "confused_with_label": "CCSR_PRG026",
+          "cooccur_count": 32,
+          "cooccur_rate_given_fp": 0.04377564979480164,
+          "baseline_rate": 0.0024126775237155234,
+          "lift": 18.14401193881358
+        },
+        {
+          "confused_with_label": "CCSR_PRG024",
+          "cooccur_count": 31,
+          "cooccur_rate_given_fp": 0.04240766073871409,
+          "baseline_rate": 0.0025223446838844106,
+          "lift": 16.81279367156367
+        },
+        {
+          "confused_with_label": "CCSR_PRG014",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.005471956224350205,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 16.632010943912448
+        }
+      ]
+    },
+    "CCSR_RSP012": {
+      "label": "CCSR_RSP012",
+      "category": "RSP",
+      "fp_count": 1650,
+      "train_support": 7204,
+      "num_candidate_confusions": 276,
+      "same_category_confusions": 12,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0024242424242424242,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 8.842181818181817
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 33,
+          "cooccur_rate_given_fp": 0.02,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 4.996438356164384
+        },
+        {
+          "confused_with_label": "CCSR_INJ074",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0018181818181818182,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 4.736883116883117
+        },
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.0024242424242424242,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 4.019173553719008
+        },
+        {
+          "confused_with_label": "CCSR_NEO039",
+          "cooccur_count": 37,
+          "cooccur_rate_given_fp": 0.022424242424242423,
+          "baseline_rate": 0.005647858748697702,
+          "lift": 3.970397175639894
+        }
+      ]
+    },
+    "CCSR_RSP016": {
+      "label": "CCSR_RSP016",
+      "category": "RSP",
+      "fp_count": 475,
+      "train_support": 4284,
+      "num_candidate_confusions": 211,
+      "same_category_confusions": 12,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 22,
+          "cooccur_rate_given_fp": 0.04631578947368421,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 30.166466165413535
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 58,
+          "cooccur_rate_given_fp": 0.12210526315789473,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 13.831265119320038
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 26,
+          "cooccur_rate_given_fp": 0.05473684210526316,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 12.477947368421052
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 31,
+          "cooccur_rate_given_fp": 0.06526315789473684,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 11.784200104220949
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 54,
+          "cooccur_rate_given_fp": 0.11368421052631579,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 11.518105263157894
+        }
+      ]
+    },
+    "CCSR_SKN002": {
+      "label": "CCSR_SKN002",
+      "category": "SKN",
+      "fp_count": 1458,
+      "train_support": 5269,
+      "num_candidate_confusions": 281,
+      "same_category_confusions": 6,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.00205761316872428,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 12.508230452674898
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.003429355281207133,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 12.508230452674896
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.003429355281207133,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 12.508230452674896
+        },
+        {
+          "confused_with_label": "CCSR_NEO011",
+          "cooccur_count": 19,
+          "cooccur_rate_given_fp": 0.013031550068587106,
+          "baseline_rate": 0.001151505181773318,
+          "lift": 11.316970409563003
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 66,
+          "cooccur_rate_given_fp": 0.04526748971193416,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 10.31929012345679
+        }
+      ]
+    },
+    "CCSR_SKN003": {
+      "label": "CCSR_SKN003",
+      "category": "SKN",
+      "fp_count": 106,
+      "train_support": 2926,
+      "num_candidate_confusions": 117,
+      "same_category_confusions": 4,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 20,
+          "cooccur_rate_given_fp": 0.18867924528301888,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 59.32661027976578
+        },
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0660377358490566,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 43.011792452830186
+        },
+        {
+          "confused_with_label": "CCSR_BLD005",
+          "cooccur_count": 12,
+          "cooccur_rate_given_fp": 0.11320754716981132,
+          "baseline_rate": 0.006689696770302133,
+          "lift": 16.92267244045778
+        },
+        {
+          "confused_with_label": "CCSR_NEO057",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0660377358490566,
+          "baseline_rate": 0.004167352086417722,
+          "lift": 15.846449851042701
+        },
+        {
+          "confused_with_label": "CCSR_FAC009",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0660377358490566,
+          "baseline_rate": 0.0055930251686132585,
+          "lift": 11.807158712541622
+        }
+      ]
+    },
+    "CCSR_SKN004": {
+      "label": "CCSR_SKN004",
+      "category": "SKN",
+      "fp_count": 3966,
+      "train_support": 5608,
+      "num_candidate_confusions": 287,
+      "same_category_confusions": 6,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO028",
+          "cooccur_count": 9,
+          "cooccur_rate_given_fp": 0.0022692889561270802,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 3.7622747902626874
+        },
+        {
+          "confused_with_label": "CCSR_END012",
+          "cooccur_count": 21,
+          "cooccur_rate_given_fp": 0.00529500756429652,
+          "baseline_rate": 0.0014256730821955365,
+          "lift": 3.7140404980798323
+        },
+        {
+          "confused_with_label": "CCSR_CIR005",
+          "cooccur_count": 402,
+          "cooccur_rate_given_fp": 0.10136157337367625,
+          "baseline_rate": 0.03366781817184844,
+          "lift": 3.010636829993052
+        },
+        {
+          "confused_with_label": "CCSR_CIR001",
+          "cooccur_count": 234,
+          "cooccur_rate_given_fp": 0.059001512859304085,
+          "baseline_rate": 0.020343258211328617,
+          "lift": 2.900298086294147
+        },
+        {
+          "confused_with_label": "CCSR_MUS017",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0007564296520423601,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 2.759001512859304
+        }
+      ]
+    },
+    "CCSR_SYM004": {
+      "label": "CCSR_SYM004",
+      "category": "SYM",
+      "fp_count": 2906,
+      "train_support": 6995,
+      "num_candidate_confusions": 334,
+      "same_category_confusions": 16,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO034",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010323468685478321,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.275636613902272
+        },
+        {
+          "confused_with_label": "CCSR_NEO041",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0010323468685478321,
+          "baseline_rate": 0.00016450074025333114,
+          "lift": 6.275636613902272
+        },
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.0024088093599449415,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 6.275636613902272
+        },
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0017205781142463868,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.275636613902271
+        },
+        {
+          "confused_with_label": "CCSR_NEO037",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.0017205781142463868,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 6.275636613902271
+        }
+      ]
+    },
+    "CCSR_SYM006": {
+      "label": "CCSR_SYM006",
+      "category": "SYM",
+      "fp_count": 505,
+      "train_support": 15116,
+      "num_candidate_confusions": 206,
+      "same_category_confusions": 14,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NVS003",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.005940594059405941,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 13.542326732673269
+        },
+        {
+          "confused_with_label": "CCSR_NVS022",
+          "cooccur_count": 4,
+          "cooccur_rate_given_fp": 0.007920792079207921,
+          "baseline_rate": 0.0006580029610133246,
+          "lift": 12.037623762376239
+        },
+        {
+          "confused_with_label": "CCSR_MBD010",
+          "cooccur_count": 22,
+          "cooccur_rate_given_fp": 0.04356435643564356,
+          "baseline_rate": 0.004112518506333278,
+          "lift": 10.59310891089109
+        },
+        {
+          "confused_with_label": "CCSR_MBD011",
+          "cooccur_count": 25,
+          "cooccur_rate_given_fp": 0.04950495049504951,
+          "baseline_rate": 0.0052640236881065965,
+          "lift": 9.404393564356436
+        },
+        {
+          "confused_with_label": "CCSR_NEO057",
+          "cooccur_count": 13,
+          "cooccur_rate_given_fp": 0.02574257425742574,
+          "baseline_rate": 0.004167352086417722,
+          "lift": 6.177201667535175
+        }
+      ]
+    },
+    "CCSR_SYM011": {
+      "label": "CCSR_SYM011",
+      "category": "SYM",
+      "fp_count": 1855,
+      "train_support": 7754,
+      "num_candidate_confusions": 288,
+      "same_category_confusions": 16,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 17,
+          "cooccur_rate_given_fp": 0.009164420485175202,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 5.968983442433577
+        },
+        {
+          "confused_with_label": "CCSR_INJ045",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0016172506738544475,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 5.898760107816711
+        },
+        {
+          "confused_with_label": "CCSR_NVS018",
+          "cooccur_count": 39,
+          "cooccur_rate_given_fp": 0.021024258760107817,
+          "baseline_rate": 0.004002851346164391,
+          "lift": 5.252320643946387
+        },
+        {
+          "confused_with_label": "CCSR_INJ076",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.0016172506738544475,
+          "baseline_rate": 0.0003290014805066623,
+          "lift": 4.915633423180593
+        },
+        {
+          "confused_with_label": "CCSR_NVS007",
+          "cooccur_count": 29,
+          "cooccur_rate_given_fp": 0.015633423180592992,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 4.915633423180593
+        }
+      ]
+    },
+    "CCSR_SYM012": {
+      "label": "CCSR_SYM012",
+      "category": "SYM",
+      "fp_count": 762,
+      "train_support": 5141,
+      "num_candidate_confusions": 217,
+      "same_category_confusions": 14,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_PRG018",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.009186351706036745,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 23.933070866141733
+        },
+        {
+          "confused_with_label": "CCSR_PRG022",
+          "cooccur_count": 10,
+          "cooccur_rate_given_fp": 0.013123359580052493,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 21.757337151037937
+        },
+        {
+          "confused_with_label": "CCSR_PRG024",
+          "cooccur_count": 41,
+          "cooccur_rate_given_fp": 0.05380577427821522,
+          "baseline_rate": 0.0025223446838844106,
+          "lift": 21.33165011982198
+        },
+        {
+          "confused_with_label": "CCSR_PRG012",
+          "cooccur_count": 7,
+          "cooccur_rate_given_fp": 0.009186351706036745,
+          "baseline_rate": 0.0004386686406755497,
+          "lift": 20.941437007874015
+        },
+        {
+          "confused_with_label": "CCSR_PRG026",
+          "cooccur_count": 38,
+          "cooccur_rate_given_fp": 0.049868766404199474,
+          "baseline_rate": 0.0024126775237155234,
+          "lift": 20.66947029348604
+        }
+      ]
+    },
+    "CCSR_SYM016": {
+      "label": "CCSR_SYM016",
+      "category": "SYM",
+      "fp_count": 279,
+      "train_support": 10049,
+      "num_candidate_confusions": 175,
+      "same_category_confusions": 12,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO006",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.010752688172043012,
+          "baseline_rate": 0.0002741679004222186,
+          "lift": 39.21935483870968
+        },
+        {
+          "confused_with_label": "CCSR_NEO059",
+          "cooccur_count": 5,
+          "cooccur_rate_given_fp": 0.017921146953405017,
+          "baseline_rate": 0.0006031693809288809,
+          "lift": 29.711632453567937
+        },
+        {
+          "confused_with_label": "CCSR_NEO038",
+          "cooccur_count": 3,
+          "cooccur_rate_given_fp": 0.010752688172043012,
+          "baseline_rate": 0.000383835060591106,
+          "lift": 28.01382488479263
+        },
+        {
+          "confused_with_label": "CCSR_NEO018",
+          "cooccur_count": 12,
+          "cooccur_rate_given_fp": 0.043010752688172046,
+          "baseline_rate": 0.0031803476448977355,
+          "lift": 13.523915461624027
+        },
+        {
+          "confused_with_label": "CCSR_NEO060",
+          "cooccur_count": 33,
+          "cooccur_rate_given_fp": 0.11827956989247312,
+          "baseline_rate": 0.008828206393595437,
+          "lift": 13.397916249248649
+        }
+      ]
+    },
+    "CCSR_SYM017": {
+      "label": "CCSR_SYM017",
+      "category": "SYM",
+      "fp_count": 161,
+      "train_support": 15469,
+      "num_candidate_confusions": 128,
+      "same_category_confusions": 9,
+      "top_confusions": [
+        {
+          "confused_with_label": "CCSR_NEO062",
+          "cooccur_count": 12,
+          "cooccur_rate_given_fp": 0.07453416149068323,
+          "baseline_rate": 0.001535340242364424,
+          "lift": 48.54569653948536
+        },
+        {
+          "confused_with_label": "CCSR_NEO061",
+          "cooccur_count": 24,
+          "cooccur_rate_given_fp": 0.14906832298136646,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 26.916425804071093
+        },
+        {
+          "confused_with_label": "CCSR_NEO068",
+          "cooccur_count": 18,
+          "cooccur_rate_given_fp": 0.11180124223602485,
+          "baseline_rate": 0.005538191588528815,
+          "lift": 20.18731935305332
+        },
+        {
+          "confused_with_label": "CCSR_NEO075",
+          "cooccur_count": 11,
+          "cooccur_rate_given_fp": 0.06832298136645963,
+          "baseline_rate": 0.004386686406755497,
+          "lift": 15.575077639751553
+        },
+        {
+          "confused_with_label": "CCSR_NEO065",
+          "cooccur_count": 23,
+          "cooccur_rate_given_fp": 0.14285714285714285,
+          "baseline_rate": 0.009870044415199869,
+          "lift": 14.473809523809523
+        }
+      ]
+    }
+  }
+}
