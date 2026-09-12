@@ -1,0 +1,157 @@
+{
+  "all_full_run_configs": [
+    {
+      "seed": 42,
+      "use_pos_weight": false,
+      "max_pos_weight": 30.0,
+      "n_runs_with_this_config": 1,
+      "aps_values": [
+        0.25425333675713246
+      ],
+      "auc_values": [
+        0.8910675082803378
+      ]
+    },
+    {
+      "seed": 42,
+      "use_pos_weight": true,
+      "max_pos_weight": 30.0,
+      "n_runs_with_this_config": 2,
+      "aps_values": [
+        0.2735172133816801,
+        0.2735172133816801
+      ],
+      "auc_values": [
+        0.9006313974430638,
+        0.9006313974430638
+      ]
+    }
+  ],
+  "matched_seed42_comparison": [
+    {
+      "seed": 42,
+      "baseline_run_id": "clean_run_20260826_133741",
+      "baseline_aps": 0.25425333675713246,
+      "baseline_auc": 0.8910675082803378,
+      "posweight30_run_id": "clean_run_20260910_124255",
+      "posweight30_aps": 0.2735172133816801,
+      "posweight30_auc": 0.9006313974430638,
+      "aps_delta": 0.01926387662454765,
+      "aps_pct_change": 7.576646533039943,
+      "auc_delta": 0.009563889162725991,
+      "auc_pct_change": 1.0733069126471961
+    }
+  ],
+  "baseline_seed_variance": null,
+  "excluded_legacy_schema_runs": [
+    {
+      "run_id": "clean_run_20260812_203637",
+      "seed": 42,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.2542139714989198,
+      "sample_wise_auc": 0.892177675374065,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260813_002645",
+      "seed": 43,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.25422945692050847,
+      "sample_wise_auc": 0.8921009915782715,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260813_010458",
+      "seed": 44,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.2584662301582742,
+      "sample_wise_auc": 0.8921955412323902,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260815_173710",
+      "seed": 42,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.4001406073133319,
+      "sample_wise_auc": 0.7934155959617475,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260815_181119",
+      "seed": 42,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.32553518880587146,
+      "sample_wise_auc": 0.7966198746669209,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260815_193025",
+      "seed": 42,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.4001406073133319,
+      "sample_wise_auc": 0.7934155959617475,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260815_202625",
+      "seed": 43,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.40112992331680863,
+      "sample_wise_auc": 0.7934219141248663,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260816_110501",
+      "seed": 44,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.40171585393082965,
+      "sample_wise_auc": 0.7935186395148142,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260819_134007",
+      "seed": 42,
+      "use_pos_weight": false,
+      "sample_wise_aps": 0.2545598607168209,
+      "sample_wise_auc": 0.89223539671191,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260819_135034",
+      "seed": 42,
+      "use_pos_weight": true,
+      "sample_wise_aps": 0.26982954784570506,
+      "sample_wise_auc": 0.8995161969180421,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260819_144514",
+      "seed": 42,
+      "use_pos_weight": true,
+      "sample_wise_aps": 0.26982954784570506,
+      "sample_wise_auc": 0.8995161969180421,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    },
+    {
+      "run_id": "clean_run_20260821_113206",
+      "seed": 42,
+      "use_pos_weight": true,
+      "sample_wise_aps": 0.2713353640555355,
+      "sample_wise_auc": 0.9016580776166135,
+      "schema_version": null,
+      "metric_exclude_labels": null
+    }
+  ],
+  "caveat": "Only seed=42 has both a baseline (use_pos_weight=False) and a pos_weight=30 full run (epochs=3, sample_limit=0) available under the CURRENT eval schema, so the pos_weight effect is a single-seed comparison, not averaged across seeds. Baseline run-to-run variance across seeds 42/43/44 is reported above for context (note: full pos_weight=30 runs only exist for seed=42, so this variance describes the baseline arm only). Runs using an older eval schema (no UNK exclusion, no tuned threshold) produced substantially different, sometimes duplicate-looking APS/AUC values and were excluded from this comparison as not eval-config-comparable; see 'excluded_legacy_schema_runs'."
+}

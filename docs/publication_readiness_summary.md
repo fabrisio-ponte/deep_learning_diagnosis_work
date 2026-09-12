@@ -70,7 +70,7 @@ The model can credibly claim that it learns **temporal patterns of clinical code
 - **predict which clinical codes will appear at next visit** (AUC 0.90, APS 0.27 with pos_weight)
 - **identify which chronic conditions will likely recur** (70% of predictions)
 - **detect some new diagnoses** (30% of predictions)
-- **rank rare vs common codes** using positive-class weighting (improves APS by 4.6%)
+- **rank rare vs common codes** using positive-class weighting (improves APS by +7.6%, verified: 0.2543 -> 0.2735)
 - **capture temporal persistence patterns** in chronic disease management
 - **support care coordination** by predicting ~9 active conditions per next visit
 
@@ -117,7 +117,7 @@ The current project relies on several assumptions **validated or challenged by E
 - ✓ Prior diagnosis history contains signal (70% recurrence shows strong temporal persistence)
 - ✓ Train/val/test splits are proper (no patient overlap confirmed)
 - ✓ Distributions are consistent across splits (confirmed by EDA)
-- ✓ Class weighting improves rare label learning (APS: 0.262 → 0.274, +4.6%)
+- ✓ Class weighting improves rare label learning (APS: 0.2543 → 0.2735, +7.6% — verified via `scripts/baseline_vs_posweight_comparison.py`, `results/baseline_vs_posweight_comparison.json`; supersedes the earlier unverified 0.262→0.274/+4.6% figure, which mixed runs from an older eval schema before UNK-label exclusion and threshold tuning were added)
 
 **Assumptions requiring careful framing:**
 - ⚠ **"Next-visit prediction" is primarily recurrence prediction** (70%), not onset (30%)
@@ -238,7 +238,7 @@ This keeps the project clinically grounded and publication-focused.
 
 A thesis-safe statement would be:
 
-> **"This work demonstrates that a transformer-based model can learn temporal patterns of clinical code recurrence from longitudinal EHR sequences, achieving meaningful next-visit prediction performance (AUC 0.90, APS 0.27) for multimorbid adult patients. Positive-class weighting improves rare code detection by 4.6% APS over baseline. However, the task is primarily chronic disease recurrence prediction (70% of targets) rather than new disease onset, performance is dominated by common conditions, and the model remains a statistical predictor of coded clinical events rather than a mechanistic account of disease progression. The work's practical value lies in supporting care coordination and resource allocation for complex patients, with clear limitations regarding population generalizability and interpretability."**
+> **"This work demonstrates that a transformer-based model can learn temporal patterns of clinical code recurrence from longitudinal EHR sequences, achieving meaningful next-visit prediction performance (AUC 0.90, APS 0.27) for multimorbid adult patients. Positive-class weighting improves rare code detection by 7.6% APS over baseline (0.2543 -> 0.2735). However, the task is primarily chronic disease recurrence prediction (70% of targets) rather than new disease onset, performance is dominated by common conditions, and the model remains a statistical predictor of coded clinical events rather than a mechanistic account of disease progression. The work's practical value lies in supporting care coordination and resource allocation for complex patients, with clear limitations regarding population generalizability and interpretability."**
 
 **Reframed research question:**
 > "Can transformer models effectively predict which clinical codes (diagnoses, symptoms, encounters) will appear at a patient's next visit, learning from longitudinal EHR sequences with extreme class imbalance and chronic disease recurrence patterns?"
@@ -269,7 +269,7 @@ Yes, this project **is publishable** when reframed correctly, but the route is:
 - "Learns temporal recurrence patterns (70%) with some new diagnosis detection (30%)"
 - "Supports care coordination and resource allocation"
 - "Demonstrates transformer effectiveness on longitudinal EHR with extreme imbalance"
-- "Positive-class weighting improves rare code detection by 4.6% APS"
+- "Positive-class weighting improves rare code detection by 7.6% APS (verified: 0.2543 → 0.2735)"
 
 **Clinical framing:**
 This is **NOT** a disease screening tool for healthy populations.
@@ -296,9 +296,9 @@ The honest framing makes it **stronger**, not weaker. Reviewers will appreciate 
 - \u23f3 Step 7: Cleaning impact analysis
 
 **Analysis priorities after EDA:**
-1. **Create comparison table:** Baseline vs pos_weight (same data/seed/architecture, only MAX_POS_WEIGHT=30 difference)
+1. ✓ **Comparison table:** Baseline vs pos_weight, same seed/data/architecture (`scripts/baseline_vs_posweight_comparison.py` → `results/baseline_vs_posweight_comparison.json`). Verified result: APS 0.2543 → 0.2735 (+7.6%), AUC 0.8911 → 0.9006 (+1.07%). Only seed=42 has a full run under the current eval schema for both arms, so this is a single-seed comparison; flagged as a limitation.
 2. **Disease-level performance:** Break down by common vs rare, new vs recurrent
-3. **Code-type analysis:** Separate performance on diseases vs symptoms vs admin codes
+3. ✓ **Code-type analysis:** Separate performance on diseases vs symptoms vs admin codes (`eda/11_code_type_performance_breakdown.py` → `eda/results/11_code_type_performance_breakdown.json`). Confirms 85.7% disease / 7.1% symptom / 4.3% admin / 2.6% injury / 0.3% pregnancy-perinatal test-occurrence split, and shows injury codes have near-zero F1 (0.046) vs disease F1 (0.200), supporting the "acute events are unpredictable" limitation.
 4. **NEW vs RECURRING performance:** Compare model effectiveness on 70% recurrent vs 30% new codes
 5. **Calibration analysis:** Threshold sensitivity, per-class calibration
 
